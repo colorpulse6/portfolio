@@ -1,16 +1,16 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const IndexPage = () => {
+const MusicPage = () => {
   
   return (
 
     <Layout>
       <h1>Hello</h1>
-      <h2>I'm Nic, a full stack web developer. Welcome.</h2>
+      <h2>I'm Nic, this is some of my music</h2>
     </Layout>
     
   )
 }
 
-export default IndexPage
+export default MusicPage

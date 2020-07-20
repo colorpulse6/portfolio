@@ -4,7 +4,23 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+ //API ACCESS: http://localhost:8000/___graphql
+
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: 'Nic Barnes Portfolio',
+    author: 'Nic Barnes'
+  },
+
+  plugins: [
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/` //Tell Gatsby playground to access mardowns from src
+      }
+    },
+    'gatsby-transformer-remark'
+  ],
 }

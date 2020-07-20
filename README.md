@@ -97,3 +97,15 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Nic's Portfolio Info
+- For this project i utilized Gatsby.js to create a static portfolio site.  I utilized tools such as css modules and scss style sheets as I was unable to implament them in my previous projects
+
+
+GOAL 1 _ Generate a slug for each post
+
+gatsby.md => gatsby => /blog/gatsby
+
+GOAL 2 - Generate the blog post page template
+
+GOAL 3 - Generate a new page for each post

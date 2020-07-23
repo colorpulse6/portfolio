@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-
 import navbarStyles from './navbar.module.scss'
 
 const Navbar = () => {

@@ -99,7 +99,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Nic's Portfolio Info
-- For this project i utilized Gatsby.js to create a static portfolio site.  I utilized tools such as css modules and scss style sheets as I was unable to implament them in my previous projects
+- For this project i utilized Gatsby.js to create a static portfolio site.  I utilized tools such as css modules and scss style sheets as I was unable to implement them in my previous projects
 
 
 GOAL 1 _ Generate a slug for each post

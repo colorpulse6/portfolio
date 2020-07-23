@@ -18,7 +18,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/src/` //Tell Gatsby playground to access mardowns from src
+        path: `${__dirname}/src/` //Tell Gatsby playground to access markdowns from src
       }
     },
     'gatsby-transformer-remark'

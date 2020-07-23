@@ -5,6 +5,8 @@ date: "2020-07-12"
 
  I just started working on a portfolio to showcase my work as a developer
 
+![Exploding Head](./exploding-headWP.jpg)
+
  ## Tools and Frameworks
 
 1. Gatsby

@@ -22,8 +22,9 @@ const Navbar = () => {
             </h1>
                 <ul className={navbarStyles.navList}>
                     <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/">Home</Link></li>
-                    <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/blog">Blog</Link></li>
-                    <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/music">Music</Link></li>
+                    {/* <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/blog">Blog</Link></li> */}
+                    {/* <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/music">Music</Link></li> */}
+                    <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/projects">Projects</Link></li>
                     <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/about">About</Link></li>
                     <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/contact">Contact</Link></li>
                 </ul>

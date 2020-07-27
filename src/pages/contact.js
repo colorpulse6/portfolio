@@ -10,7 +10,7 @@ const Contact = () => {
             <p>Phone Number</p>
             <p>Email</p>
             <p>Linkedin</p>
-            <p><a href="https://github.com/colorpulse6" target="_blank">GitHub</a></p>
+            <p><a href="https://github.com/colorpulse6" target="_blank" rel="noreferrer">GitHub</a></p>
             <p>Music</p>
             <p>Contact Form</p>
         </Layout>

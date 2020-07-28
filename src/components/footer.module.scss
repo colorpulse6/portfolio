@@ -1,12 +1,16 @@
 .footer {
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 
 .footer p {
     text-align: center;
 }
 
+.icon-container {
+    display:flex;
+    justify-content: center;
+}
 .icons {
-    margin:10px
+    padding-right:10px
 }
 

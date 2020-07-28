@@ -14,6 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.23.12",
     "gatsby-cli": "^2.12.67",
     "gatsby-plugin-sass": "^2.3.12",
@@ -25,6 +26,7 @@
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-social-media-bar": "0.0.4",
     "social-media-icons-react": "^1.0.10"
   },
   "devDependencies": {

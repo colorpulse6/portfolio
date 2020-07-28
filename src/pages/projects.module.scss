@@ -2,7 +2,47 @@
     width: 200px;
     overflow: hidden;
     margin-bottom: -50px;
+    
 }
+
+.project-imgs:hover {
+    
+        transform: translate(10px, 5px) rotate(5deg)
+      
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+.fade-animation-1 {
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.fade-animation-2 {
+    animation: fadeInAnimation ease 1.5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.fade-animation-3 {
+    animation: fadeInAnimation ease 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.fade-animation-4 {
+    animation: fadeInAnimation linear .5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: backwards; 
+    animation-delay: .5s;}
 
 .project-container {
     display:flex;

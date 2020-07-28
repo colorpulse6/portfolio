@@ -13,6 +13,18 @@ module.exports = {
   },
 
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+       
+      }
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
@@ -32,6 +44,7 @@ module.exports = {
             options: {
               maxWidth: 750,
               linkImagesToOriginal: false
+              
             }
           }
         ]

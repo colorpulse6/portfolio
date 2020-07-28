@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^2.23.12",
+    "gatsby-cli": "^2.12.67",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.21",
     "gatsby-remark-images": "^3.3.20",

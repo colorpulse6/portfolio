@@ -10,7 +10,7 @@ import gigzilla from "../imgs/gigzilla.png"
 import madScience from "../imgs/madScience.png"
 
 const ProjectsPage = () => {
-  const linkStyles={ textDecoration: 'none' }
+  const linkStyles={ textDecoration: 'none', color: 'black' }
   return (
     <Layout>
       <h1>My Projects</h1>

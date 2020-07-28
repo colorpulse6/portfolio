@@ -1,0 +1,13 @@
+.index-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    box-shadow: 1px 1px 10px 1px #888888;
+    margin-bottom:50px;
+}

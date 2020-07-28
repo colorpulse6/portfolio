@@ -5,7 +5,7 @@ import projectStyles from "./projects.module.scss"
 
 import hoopItApp from "../imgs/hoopitapp.png"
 import gigzilla from "../imgs/gigzilla.png"
-import madScience from "../imgs/madscience.png"
+import madScience from "../imgs/madScience.png"
 
 const ProjectsPage = () => {
   return (

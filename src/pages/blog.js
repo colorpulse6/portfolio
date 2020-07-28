@@ -26,7 +26,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
-            <Link to ="/"><button>Back</button></Link>
+            
             <h1>Blog</h1>
             <ol className = {blogStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge)=>{

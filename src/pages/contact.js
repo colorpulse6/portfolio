@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 const Contact = () => {
     return (
         <Layout>
-            <Link to ="/"><button>Back</button></Link>
+            
             <h1>Contact</h1>
             <p>Phone Number</p>
             <p>Email</p>

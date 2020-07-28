@@ -1,5 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
+import profileImg from '../imgs/ProfilePic.jpeg'
+import indexStyles from './index.module.scss'
+
 
 const IndexPage = () => {
   

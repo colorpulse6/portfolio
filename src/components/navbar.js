@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+
 import navbarStyles from './navbar.module.scss'
+import profileImg from '../imgs/ProfilePic.jpeg'
 
 const Navbar = () => {
     //Query graphql db with tagged template literal
@@ -18,9 +20,10 @@ const Navbar = () => {
         <header className={navbarStyles.header}>
             <nav>
             <h1> 
-                <Link className={navbarStyles.title} activeClassName={navbarStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link>
+                {/* <Link className={navbarStyles.title} activeClassName={navbarStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link> */}
             </h1>
                 <ul className={navbarStyles.navList}>
+                    <img src={profileImg} className={navbarStyles.profileImg}></img>
                     <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/">Home</Link></li>
                     {/* <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/blog">Blog</Link></li> */}
                     {/* <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/music">Music</Link></li> */}

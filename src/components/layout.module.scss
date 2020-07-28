@@ -1,13 +1,17 @@
 .container {
     margin: 0 auto;
-    max-width: 750px;
+    // max-width: 750px;
     padding: 1rem;
 
     display:flex;
     flex-direction:column;
-    min-height:100vh
+    min-height:100vh;
+    h1{
+        margin-left:42%
+    }
 }
 
 .content {
     flex-grow: 1;
 }
+

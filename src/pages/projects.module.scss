@@ -1,0 +1,21 @@
+.project-imgs {
+    width: 200px;
+    overflow: hidden;
+    margin-bottom: -50px;
+}
+
+.project-container {
+    display:flex;
+    justify-content: space-evenly;
+
+    
+    li {
+        list-style-type: none;   
+    }
+    h3 {
+        text-align: center;
+        margin-top:2rem;
+        text-decoration: none;     
+
+    }
+}

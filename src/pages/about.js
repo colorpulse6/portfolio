@@ -12,7 +12,7 @@ const About = () => {
             
             <h1>About</h1>
 
-                <p className={aboutStyles.about}>I am a web deveoper, writer and musician living in Berlin.  I am originally from Seattle. I am interested in creative solutions to complex problems. I like to make corny video games, arrange orchestral music and solve math problems </p>
+                <p className={aboutStyles.about}>I am a web deveoper, writer and musician living in Berlin.  I am originally from Seattle. I am interested in creative solutions to complex problems. I like to make corny video games, arrange orchestral music and solve math problems. </p>
 
         </Layout>
     )

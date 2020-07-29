@@ -8,11 +8,6 @@ import Layout from "../components/layout"
 import cx from "classnames"
 import projectStyles from "./projects.module.scss"
 
-//Images
-import hoopItApp from "../imgs/hoopitapp.png"
-import gigzilla from "../imgs/gigzilla.png"
-import madScience from "../imgs/madScience.png"
-
 const ProjectsPage = () => {
   const linkStyles = { textDecoration: "none" }
 

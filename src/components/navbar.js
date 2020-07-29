@@ -23,7 +23,7 @@ const Navbar = () => {
                 {/* <Link className={navbarStyles.title} activeClassName={navbarStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link> */}
             </h1>
                 <ul className={navbarStyles.navList}>
-                    <img src={profileImg} className={navbarStyles.profileImg}></img>
+                    
                     <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/">Home</Link></li>
                     {/* <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/blog">Blog</Link></li> */}
                     {/* <li><Link className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem} to="/music">Music</Link></li> */}

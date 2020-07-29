@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
+import { useStaticQuery, graphql } from "gatsby"
 
+import Layout from "../components/layout"
 
 //Styles
 import cx from "classnames"
@@ -12,66 +13,46 @@ import hoopItApp from "../imgs/hoopitapp.png"
 import gigzilla from "../imgs/gigzilla.png"
 import madScience from "../imgs/madScience.png"
 
-
 const ProjectsPage = () => {
   const linkStyles = { textDecoration: "none" }
+
+  //SOURCE CLOUDINARY
+  const data = useStaticQuery(graphql`
+    query MyProjectQuery {
+      allProject {
+        nodes {
+          name
+          link
+          imgSrc
+          id
+        }
+      }
+    }
+  `)
+  const images = data.allProject.nodes
+
   return (
     <Layout>
       <h1>Projects</h1>
       <div className={projectStyles.projectContainer}>
-        <li>
-          <Link
-            style={linkStyles}
-            to="https://hoopitapp.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h3>Hoop.It.App</h3>
-            <img
-              src={hoopItApp}
-              className={cx(
-                projectStyles.projectImgs,
-                projectStyles.fadeAnimation1
-              )}
-            ></img>
-          </Link>
-        </li>
+        {images.map(project => (
+          <div>
+            <li>
+              <Link style={linkStyles} href={project.link} target="_blank"             rel="noreferrer"
+>
+                <h3>{project.name}</h3>
+                <img
+                  src={project.imgSrc}
+                  className={cx(
+                    projectStyles.projectImgs,
+                    projectStyles.fadeAnimation1
+                  )}
+                ></img>
+              </Link>
+            </li>
+          </div>
+        ))}
 
-        <li>
-          <Link
-            style={linkStyles}
-            to="https://gig-zilla.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h3 className={projectStyles.fadeAnimation4}>Gigzilla</h3>
-            <img
-              src={gigzilla}
-              className={cx(
-                projectStyles.projectImgs,
-                projectStyles.fadeAnimation2
-              )}
-            ></img>
-          </Link>
-        </li>
-
-        <li>
-          <Link
-            style={linkStyles}
-            to="https://colorpulse6.github.io/mad-science/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h3 className={projectStyles.fadeAnimation4}>Mad Science</h3>
-            <img
-              src={madScience}
-              className={cx(
-                projectStyles.projectImgs,
-                projectStyles.fadeAnimation3
-              )}
-            ></img>
-          </Link>
-        </li>
       </div>
     </Layout>
   )

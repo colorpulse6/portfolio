@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 
-const Contact = () => {
+const FormSuccess = () => {
     return (
-
-        <div>
-            Your message was successfull!
-        </div>
-
+        <Layout>
+            <div>
+                Your message was successfull!
+            </div>
+        </Layout>
     )}
+
+    export default FormSuccess

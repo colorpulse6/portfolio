@@ -42,7 +42,7 @@ const IndexPage = () => {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'
   }}>
-          <div class="container" className={indexStyles.container}>
+          <div class="container" className={indexStyles.container2}>
             
             <img src={profileImg} className={indexStyles.profileImg}></img>
             <h1 class="display-4">

@@ -32,11 +32,16 @@ const IndexPage = () => {
   const executeScrollAbout = () => scrollToAbout(aboutRef)
   const executeScrollContact = () => scrollToContact(contactRef)
   const executeScrollTop = () => scrollToTop(window)
-
+  
   return (
     <Layout>
       <div className={indexStyles.mainContainer}>
-        <div class="jumbotron jumbotron-fluid" className={indexStyles.jumbo}>
+        <div class="jumbotron jumbotron-fluid" className={indexStyles.jumbo} style={{  
+    backgroundImage: "url(" + "https://res.cloudinary.com/duzle7rzg/image/upload/v1596112152/Portfolio/project-images/esusev0fnwlvnpvqatwq.jpg" + ")",
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
+  }}>
           <div class="container" className={indexStyles.container}>
             
             <img src={profileImg} className={indexStyles.profileImg}></img>

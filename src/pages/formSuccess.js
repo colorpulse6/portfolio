@@ -1,11 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
+import { Link } from "gatsby"
+
 
 const FormSuccess = () => {
   return (
-    <Layout>
-      <div>Your message was successfull!</div>
-    </Layout>
+      <div>
+        <p>Your message was successfull!</p>
+        <Link to ='/'>Back</Link>
+      </div>
+      
+    
   )
 }
 

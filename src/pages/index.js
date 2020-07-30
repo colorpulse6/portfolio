@@ -6,7 +6,6 @@ import indexStyles from "./index.module.scss"
 import Projects from "./projects.js"
 import Contact from "./contact.js"
 import About from "./about.js"
-
 import "jquery/dist/jquery.js"
 import "bootstrap/dist/css/bootstrap.css"
 import { Link } from "gatsby"
@@ -24,6 +23,11 @@ const scrollToContact = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToTop = ref => window.scrollTo(0, window)
 
 const IndexPage = () => {
+
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
+
   const projectRef = useRef(null)
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
@@ -32,31 +36,35 @@ const IndexPage = () => {
   const executeScrollAbout = () => scrollToAbout(aboutRef)
   const executeScrollContact = () => scrollToContact(contactRef)
   const executeScrollTop = () => scrollToTop(window)
-  
+
   return (
     <Layout>
       <div className={indexStyles.mainContainer}>
-        <div class="jumbotron jumbotron-fluid" style={{  
-    backgroundImage: "url(" + "https://res.cloudinary.com/duzle7rzg/image/upload/v1596112152/Portfolio/project-images/esusev0fnwlvnpvqatwq.jpg" + ")",
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    marginTop: '150px',
-    boxShadow: '25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset'
-    
-  }}>
+        <div
+          class="jumbotron jumbotron-fluid"
+          style={{
+            backgroundImage:
+              "url(" +
+              "https://res.cloudinary.com/duzle7rzg/image/upload/v1596112152/Portfolio/project-images/esusev0fnwlvnpvqatwq.jpg" +
+              ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            marginTop: "150px",
+            boxShadow:
+              "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
+          }}
+        >
           <div class="container" className={indexStyles.headerText}>
-            
             <img src={profileImg} className={indexStyles.profileImg}></img>
             <h1 class="display-4">
               Hi I'm Nic<br></br> A Full-Stack Web Developer.
             </h1>
           </div>
-          
         </div>
         <a onClick={executeScrollProject} className={indexStyles.buttons}>
-            <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
-          </a>
+          <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
+        </a>
         <hr className={indexStyles.hr}></hr>
         <div ref={projectRef} className={indexStyles.projectDiv}>
           <Projects />

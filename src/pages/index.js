@@ -36,13 +36,16 @@ const IndexPage = () => {
   return (
     <Layout>
       <div className={indexStyles.mainContainer}>
-        <div class="jumbotron jumbotron-fluid" className={indexStyles.jumbo} style={{  
+        <div class="jumbotron jumbotron-fluid" style={{  
     backgroundImage: "url(" + "https://res.cloudinary.com/duzle7rzg/image/upload/v1596112152/Portfolio/project-images/esusev0fnwlvnpvqatwq.jpg" + ")",
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    marginTop: '150px',
+    boxShadow: '25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset'
+    
   }}>
-          <div class="container" className={indexStyles.container2}>
+          <div class="container" className={indexStyles.headerText}>
             
             <img src={profileImg} className={indexStyles.profileImg}></img>
             <h1 class="display-4">
@@ -77,12 +80,12 @@ const IndexPage = () => {
       <button onClick={executeScrollTop} className={indexStyles.toTop}>
         <FontAwesomeIcon icon={faAngleDoubleUp} size="2x"></FontAwesomeIcon>
       </button>
-      <h6 className={indexStyles.underConstro}>
+      {/* <h6 className={indexStyles.underConstro}>
               {" "}
               <FontAwesomeIcon icon={faExclamationTriangle} />
               This site is currently under construction.
               <FontAwesomeIcon icon={faExclamationTriangle} />
-            </h6>
+            </h6> */}
     </Layout>
   )
 }

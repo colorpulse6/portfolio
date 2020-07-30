@@ -5,11 +5,17 @@ import { useStaticQuery, graphql } from "gatsby"
 import "jquery/dist/jquery.js"
 import "bootstrap/dist/css/bootstrap.css"
 import aboutStyles from "./about.module.scss"
+import { nodeName } from "jquery"
 
 const About = () => {
   return (
     <div>
-      <div class="jumbotron jumbotron-fluid" className={aboutStyles.about}>
+      <div class="jumbotron jumbotron-fluid" style={{  
+    marginTop:'100px',
+    height:'650px',
+    background:'none'
+    
+  }}>
         <div class="container">
           <h1 class="display-4">About</h1>
           <p class="lead">

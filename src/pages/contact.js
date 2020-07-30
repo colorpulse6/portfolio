@@ -6,7 +6,7 @@ import cx from "classnames"
 const Contact = () => {
   return (
     <div className={contactStyles.container}>
-      <h1>Contact</h1>
+      <h1>Contact Me</h1>
       <h4>Have a question or want to work together?</h4>
       <form
         name="contact"

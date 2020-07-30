@@ -38,12 +38,7 @@ const IndexPage = () => {
       <div className={indexStyles.mainContainer}>
         <div class="jumbotron jumbotron-fluid" className={indexStyles.jumbo}>
           <div class="container" className={indexStyles.container}>
-            {/* <h6 className={indexStyles.underConstro}>
-              {" "}
-              <FontAwesomeIcon icon={faExclamationTriangle} />
-              This site is currently under construction.
-              <FontAwesomeIcon icon={faExclamationTriangle} />
-            </h6> */}
+            
             <img src={profileImg} className={indexStyles.profileImg}></img>
             <h1 class="display-4">
               Hi I'm Nic<br></br> A Full-Stack Web Developer.
@@ -61,6 +56,12 @@ const IndexPage = () => {
         <a onClick={executeScrollAbout} className={indexStyles.buttons}>
           <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
         </a>
+        <h6 className={indexStyles.underConstro}>
+              {" "}
+              <FontAwesomeIcon icon={faExclamationTriangle} />
+              This site is currently under construction.
+              <FontAwesomeIcon icon={faExclamationTriangle} />
+            </h6>
         <hr className={indexStyles.hr}></hr>
         <div ref={aboutRef}>
           <About />

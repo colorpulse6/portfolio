@@ -52,10 +52,11 @@ const IndexPage = () => {
               Hi I'm Nic<br></br> A Full-Stack Web Developer.
             </h1>
           </div>
-          <a onClick={executeScrollProject} className={indexStyles.buttons}>
+          
+        </div>
+        <a onClick={executeScrollProject} className={indexStyles.buttons}>
             <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
           </a>
-        </div>
         <hr className={indexStyles.hr}></hr>
         <div ref={projectRef} className={indexStyles.projectDiv}>
           <Projects />

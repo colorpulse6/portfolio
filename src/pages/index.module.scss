@@ -6,26 +6,28 @@
 .jumbo {
    
 
-    margin-top: 250px;
+    margin-top: 150px;
     box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
 }
 
-.container2 {
+.container {
     padding: 100px;
 
 }
 
 .profile-img {
-    margin-top:100px;
     width: 200px;
     height: 200px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     
+    margin-top:100px;
+
 }
 
 .buttons {
     cursor: pointer;
     position: relative;
+    
 }
 
 .hr {
@@ -71,7 +73,7 @@
     color: red;
     animation: blinkingText 3.5s infinite;
     margin-bottom: 40px;
-   
+    margin-top: -50px;
 }
 
 

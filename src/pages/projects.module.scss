@@ -1,5 +1,11 @@
+.container h1,
+h3 {
+    font-family: "Helvetica Neu", Arial, sans-serif;
+
+}
+
 .project-imgs {
-    width: 250px;
+    width: 200px;
     overflow: hidden;
     margin-bottom: -50px;
 
@@ -14,14 +20,14 @@
     display: flex;
     justify-content: space-evenly;
 
-
     li {
         list-style-type: none;
     }
 
     h3 {
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
         text-decoration: none;
         color: rgb(78, 76, 76);
     }
@@ -65,4 +71,3 @@
     animation-fill-mode: backwards;
     animation-delay: .5s;
 }
-

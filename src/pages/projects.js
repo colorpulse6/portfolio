@@ -27,14 +27,18 @@ const ProjectsPage = () => {
   const images = data.allProject.nodes
 
   return (
-    <Layout>
+    <div className={projectStyles.container}>
       <h1>Projects</h1>
       <div className={projectStyles.projectContainer}>
         {images.map(project => (
           <div>
             <li>
-              <Link style={linkStyles} href={project.link} target="_blank"             rel="noreferrer"
->
+              <Link
+                style={linkStyles}
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h3>{project.name}</h3>
                 <img
                   src={project.imgSrc}
@@ -47,9 +51,8 @@ const ProjectsPage = () => {
             </li>
           </div>
         ))}
-
       </div>
-    </Layout>
+    </div>
   )
 }
 

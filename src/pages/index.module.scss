@@ -1,14 +1,123 @@
-.index-container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.mainContainer>* {
+    margin-top: 100px;
+
+}
+
+.jumbo {
+    background-image: url('https://source.unsplash.com/6YmzwamGzCg/1600x700');
+
+    margin-top: 150px;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+}
+
+.container {
+    padding: 100px;
+
 }
 
 .profile-img {
-    border-radius: 50%;
-    width:200px;
-    height:200px;
-    box-shadow: 1px 1px 10px 1px #888888;
-    margin-bottom:50px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 60px;
+    margin-top: -20px
 }
 
+.buttons {
+    cursor: pointer;
+    position: relative;
+}
+
+.hr {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.project-div {
+    margin-bottom: 80px
+}
+
+.to-top {
+    border: none;
+    margin-top: 50px;
+    margin-left: 500px;
+    background: none
+}
+
+@keyframes blinkingText {
+    0% {
+        color: rgb(245, 17, 17);
+    }
+
+    49% {
+        color: rgb(204, 8, 8);
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    99% {
+        color: transparent;
+    }
+
+    100% {
+        color: rgb(136, 9, 9);
+    }
+}
+
+.underConstro {
+    color: red;
+    animation: blinkingText 3.5s infinite;
+    margin-bottom: 40px;
+    margin-top: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .text {
+//     font-family: "ShogunsClan", sans-serif;
+//     font-size: 180px;
+//     color:black;
+//     font-weight: lighter;
+// }
+
+// .nic{
+// margin-left:-500px;
+// margin-top:-150px;
+// transform: rotate(330deg);
+
+// }
+
+// .barnes{
+//     margin-top:-130;
+//     margin-left:550px;
+//     transform: rotate(30deg);
+// }
+
+// .portfolio {
+// margin-left:-250px;
+// margin-top: -100px
+// }
+
+// @font-face {
+//     font-family: 'AllCrackedOut';
+//     src: url("../fonts/AllCrackedOut.ttf")
+//   }
+
+// @font-face {
+//     font-family: 'ShogunsClan';
+//     src: url("../fonts/ShogunsClan.ttf")
+//   }

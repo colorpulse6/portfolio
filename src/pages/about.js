@@ -1,22 +1,27 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
-import {useStaticQuery, graphql} from 'gatsby'
-
+import React from "react"
+import { Link } from "gatsby"
+import Layout from "../components/layout"
+import { useStaticQuery, graphql } from "gatsby"
+import "jquery/dist/jquery.js"
+import "bootstrap/dist/css/bootstrap.css"
 import aboutStyles from "./about.module.scss"
 
 const About = () => {
-
-    return (
-        <Layout>
-            
-            <h1>About</h1>
-
-                <p className={aboutStyles.about}>I am a web deveoper, writer and musician living in Berlin.  I am originally from Seattle. I am interested in creative solutions to complex problems. I like to make corny video games, arrange orchestral music and solve math problems. </p>
-
-        </Layout>
-    )
+  return (
+    <div>
+      <div class="jumbotron jumbotron-fluid" className={aboutStyles.about}>
+        <div class="container">
+          <h1 class="display-4">About</h1>
+          <p class="lead">
+            I am a web developer, writer and musician living in Berlin. I am
+            originally from Seattle. I am interested in creative solutions to
+            complex problems. I like to make corny video games, arrange
+            orchestral music and solve math problems.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default About
-

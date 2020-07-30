@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import contactStyles from "./contact.module.scss"
+import cx from "classnames"
+
 const Contact = () => {
   return (
-    <Layout>
+    <div className={contactStyles.container}>
       <h1>Contact</h1>
+      <h4>Have a question or want to work together?</h4>
       <form
         name="contact"
         method="POST"
@@ -13,28 +16,34 @@ const Contact = () => {
         netlify-honeypot="bot-field"
       >
         <input type="hidden" name="bot-field" />
-         <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email: <input type="email" name="email" />
-          </label>
-        </p>
-        
-        <p>
-          <label>
-            Message: <textarea name="message"></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+        <input type="hidden" name="form-name" value="contact" />
+        <div className={contactStyles.main}>
+          <div>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </div>
+          <div>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Message: <textarea name="message"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          className={cx(contactStyles.btn, contactStyles.effect01)}
+        >
+          <span>Send</span>
+        </button>
       </form>
-    </Layout>
+    </div>
   )
 }
 

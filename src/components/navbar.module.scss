@@ -1,5 +1,7 @@
+
 .header {
     padding:0rem 0 3rem;
+
 }
 
 .title {
@@ -11,7 +13,7 @@
 .nav-list { //Use camelCase to apply
     display:flex;
     list-style-type: none;
-    margin: 0;
+    margin: -20px 0 0 10px;
 }
 
 .nav-item {

@@ -61,12 +61,6 @@ const IndexPage = () => {
         <a onClick={executeScrollAbout} className={indexStyles.buttons}>
           <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
         </a>
-        <h6 className={indexStyles.underConstro}>
-              {" "}
-              <FontAwesomeIcon icon={faExclamationTriangle} />
-              This site is currently under construction.
-              <FontAwesomeIcon icon={faExclamationTriangle} />
-            </h6>
         <hr className={indexStyles.hr}></hr>
         <div ref={aboutRef}>
           <About />
@@ -83,6 +77,12 @@ const IndexPage = () => {
       <button onClick={executeScrollTop} className={indexStyles.toTop}>
         <FontAwesomeIcon icon={faAngleDoubleUp} size="2x"></FontAwesomeIcon>
       </button>
+      <h6 className={indexStyles.underConstro}>
+              {" "}
+              <FontAwesomeIcon icon={faExclamationTriangle} />
+              This site is currently under construction.
+              <FontAwesomeIcon icon={faExclamationTriangle} />
+            </h6>
     </Layout>
   )
 }

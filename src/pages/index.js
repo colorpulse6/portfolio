@@ -38,12 +38,12 @@ const IndexPage = () => {
       <div className={indexStyles.mainContainer}>
         <div class="jumbotron jumbotron-fluid" className={indexStyles.jumbo}>
           <div class="container" className={indexStyles.container}>
-            <h6 className={indexStyles.underConstro}>
+            {/* <h6 className={indexStyles.underConstro}>
               {" "}
               <FontAwesomeIcon icon={faExclamationTriangle} />
               This site is currently under construction.
               <FontAwesomeIcon icon={faExclamationTriangle} />
-            </h6>
+            </h6> */}
             <img src={profileImg} className={indexStyles.profileImg}></img>
             <h1 class="display-4">
               Hi I'm Nic<br></br> A Full-Stack Web Developer.

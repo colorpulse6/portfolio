@@ -25,7 +25,7 @@ const Contact = () => {
           </div>
           <div>
             <label>
-              Your Email: <input type="email" name="email" />
+              Your Email: <input type="email" name="email" required/>
             </label>
           </div>
 

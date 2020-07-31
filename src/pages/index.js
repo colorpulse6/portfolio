@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
 import indexStyles from "./index.module.scss"
-
 import Projects from "./projects.js"
 import Contact from "./contact.js"
 import About from "./about.js"
@@ -20,7 +19,7 @@ import { useRef } from "react"
 const scrollToProject = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToAbout = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToContact = ref => window.scrollTo(0, ref.current.offsetTop)
-const scrollToTop = ref => window.scrollTo(0, window)
+const scrollToTop = ref => window.scrollTo(window)
 
 const IndexPage = () => {
   React.useEffect(() => {

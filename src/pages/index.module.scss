@@ -13,7 +13,7 @@
     width: 100%; /* manually set width */
     -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
-    animation-delay: .1s;
+    
 
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -23,7 +23,7 @@
     width: 100%; /* manually set width */
   opacity: 0;
   animation: type2 2s steps(40, end);
-  animation-delay: .7s;
+  animation-delay: .6s;
   animation-fill-mode: forwards;
   }
 

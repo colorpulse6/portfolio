@@ -12,7 +12,8 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: 'Nic Barnes Portfolio',
-    author: 'Nic Barnes'
+    author: 'Nic Barnes',
+    
   },
 
   plugins: [

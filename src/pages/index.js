@@ -23,10 +23,9 @@ const scrollToContact = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToTop = ref => window.scrollTo(0, window)
 
 const IndexPage = () => {
-
   React.useEffect(() => {
-    scrollToTop();
-  }, []);
+    scrollToTop()
+  }, [])
 
   const projectRef = useRef(null)
   const aboutRef = useRef(null)
@@ -55,15 +54,25 @@ const IndexPage = () => {
               "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
           }}
         >
-          <div class="container" className={indexStyles.headerText}>
+          <div class="container" >
             <img src={profileImg} className={indexStyles.profileImg}></img>
             <h1 class="display-4">
-              Hi I'm Nic<br></br> A Full-Stack Web Developer.
+            <div className={indexStyles.headerText}>
+              <div>
+                Hi I'm Nic
+              </div>
+              <div>A Full-Stack Web Developer.</div> 
+              </div>
+
             </h1>
           </div>
         </div>
-        <a onClick={executeScrollProject} className={indexStyles.buttons}>
-          <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
+        <a onClick={executeScrollProject} class={indexStyles.buttons}>
+          <FontAwesomeIcon
+            icon={faAngleDown}
+            size="2x"
+            className={indexStyles.icons}
+          ></FontAwesomeIcon>
         </a>
         <hr className={indexStyles.hr}></hr>
         <div ref={projectRef} className={indexStyles.projectDiv}>
@@ -71,14 +80,22 @@ const IndexPage = () => {
         </div>
 
         <a onClick={executeScrollAbout} className={indexStyles.buttons}>
-          <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faAngleDown}
+            size="2x"
+            className={indexStyles.icons}
+          ></FontAwesomeIcon>
         </a>
         <hr className={indexStyles.hr}></hr>
         <div ref={aboutRef}>
           <About />
         </div>
         <a onClick={executeScrollContact} className={indexStyles.buttons}>
-          <FontAwesomeIcon icon={faAngleDown} size="2x"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faAngleDown}
+            size="2x"
+            className={indexStyles.icons}
+          ></FontAwesomeIcon>
         </a>
 
         <hr className={indexStyles.hr}></hr>
@@ -87,7 +104,11 @@ const IndexPage = () => {
         </div>
       </div>
       <button onClick={executeScrollTop} className={indexStyles.toTop}>
-        <FontAwesomeIcon icon={faAngleDoubleUp} size="2x"></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={faAngleDoubleUp}
+          size="2x"
+          className={indexStyles.icons}
+        ></FontAwesomeIcon>
       </button>
       {/* <h6 className={indexStyles.underConstro}>
               {" "}

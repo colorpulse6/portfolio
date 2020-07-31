@@ -3,11 +3,66 @@
 
 }
 
+.headerText div {
+    margin:0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
+  .headerText div:nth-child(1) {
+    width: 100%; /* manually set width */
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
 
-.headerText {
-    padding: 100px;
-}
+  .headerText div:nth-child(2) {
+    width: 100%; /* manually set width */
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: .6s;
+  animation-fill-mode: forwards;
+  }
+
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  
 
 .profile-img {
     width: 200px;
@@ -19,6 +74,25 @@
     cursor: pointer;
     position: relative;
 
+
+}
+
+.icons:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
 }
 
 .hr {
@@ -38,34 +112,38 @@
     background: none
 }
 
-@keyframes blinkingText {
-    0% {
-        color: rgb(245, 17, 17);
-    }
 
-    49% {
-        color: rgb(204, 8, 8);
-    }
 
-    60% {
-        color: transparent;
-    }
 
-    99% {
-        color: transparent;
-    }
 
-    100% {
-        color: rgb(136, 9, 9);
-    }
-}
+// @keyframes blinkingText {
+//     0% {
+//         color: rgb(245, 17, 17);
+//     }
 
-.underConstro {
-    color: red;
-    animation: blinkingText 3.5s infinite;
-    margin-bottom: 40px;
-    margin-top: -50px;
-}
+//     49% {
+//         color: rgb(204, 8, 8);
+//     }
+
+//     60% {
+//         color: transparent;
+//     }
+
+//     99% {
+//         color: transparent;
+//     }
+
+//     100% {
+//         color: rgb(136, 9, 9);
+//     }
+// }
+
+// .underConstro {
+//     color: red;
+//     animation: blinkingText 3.5s infinite;
+//     margin-bottom: 40px;
+//     margin-top: -50px;
+// }
 
 
 

@@ -21,6 +21,7 @@
     "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
+    "font-awesome-animation": "^0.2.1",
     "gatsby": "^2.23.12",
     "gatsby-cli": "^2.12.67",
     "gatsby-plugin-manifest": "^2.4.21",

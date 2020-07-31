@@ -9,13 +9,14 @@ import { nodeName } from "jquery"
 
 const About = () => {
   return (
-    <div>
-      <div class="jumbotron jumbotron-fluid" style={{  
-    marginTop:'100px',
-    height:'650px',
-    background:'none'
-    
-  }}>
+    <div className={aboutStyles.about}>
+      <div
+        class="jumbotron jumbotron-fluid"
+        style={{
+          marginTop: "100px",
+          background: "none",
+        }}
+      >
         <div class="container">
           <h1 class="display-4">About</h1>
           <p class="lead">

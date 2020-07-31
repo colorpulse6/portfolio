@@ -14,7 +14,7 @@ class Loading extends React.Component {
   render() {
     const defaultOptions = {
         
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: loader,
       rendererSettings: {

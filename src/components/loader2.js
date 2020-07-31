@@ -20,7 +20,7 @@ class Loading2 extends React.Component {
 
     return (
       <div style={styles}>
-        <Lottie options={defaultOptions} height={350} width={350}/>
+        <Lottie options={defaultOptions} height={350} width={350} />
       </div>
     );
   }

@@ -1,6 +1,8 @@
-import React from "react"
+import React, { Component } from "react"
 import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
+import profileImgRed from "../imgs/ProfilePicRedEyes.png"
+
 import indexStyles from "./index.module.scss"
 import Projects from "./projects.js"
 import Contact from "./contact.js"
@@ -11,6 +13,8 @@ import Loading2 from "../components/loader2.js";
 
 import "jquery/dist/jquery.js"
 import "bootstrap/dist/css/bootstrap.css"
+import HoverImage from "react-hover-image";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faAngleDown,
@@ -18,6 +22,8 @@ import {
   faExclamationTriangle,
 } from "@fortawesome/free-solid-svg-icons"
 import { useRef } from "react"
+
+
 
 const scrollToProject = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToAbout = ref => window.scrollTo(0, ref.current.offsetTop)
@@ -54,8 +60,10 @@ const IndexPage = () => {
     position:'absolute',
     left:'37.7%',
     top:'-24.5px',
-
+    background:"#06000000"
   }
+
+  
   return (
     
     <Layout>
@@ -77,8 +85,10 @@ const IndexPage = () => {
           }}
         >
           <div class="container" >
-            <img src={profileImg} className={indexStyles.profileImg}></img>
-            <div style={loadStyle}><Loading2 /></div>
+          <div style={loadStyle}><Loading2 /></div>
+
+          <HoverImage className={indexStyles.profileImg} src={profileImg} hoverSrc={profileImgRed} ></HoverImage>
+            
 
             <h1 class="display-4">
             <div className={indexStyles.headerText}>

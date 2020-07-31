@@ -37,6 +37,7 @@
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-lottie": "^1.2.3",
     "react-social-media-bar": "0.0.4",
     "social-media-icons-react": "^1.0.10"
   },

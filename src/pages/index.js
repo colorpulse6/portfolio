@@ -5,9 +5,12 @@ import indexStyles from "./index.module.scss"
 import Projects from "./projects.js"
 import Contact from "./contact.js"
 import About from "./about.js"
+
+import Loading from "../components/loader.js";
+import Loading2 from "../components/loader2.js";
+
 import "jquery/dist/jquery.js"
 import "bootstrap/dist/css/bootstrap.css"
-import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faAngleDown,
@@ -22,7 +25,13 @@ const scrollToContact = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToTop = ref => window.scrollTo(window)
 
 const IndexPage = () => {
-  React.useEffect(() => {
+  const [isLoading, setLoad] = React.useState(true)
+
+  React.useEffect( () => {
+    setTimeout(() => { 
+      setLoad(false)
+    }, 2000);
+    
     scrollToTop()
   }, [])
 
@@ -34,9 +43,23 @@ const IndexPage = () => {
   const executeScrollAbout = () => scrollToAbout(aboutRef)
   const executeScrollContact = () => scrollToContact(contactRef)
   const executeScrollTop = () => scrollToTop(window)
+  if (isLoading) {
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
+  }
+  const loadStyle = {
+    position:'absolute',
+    left:'37.7%',
+    top:'-24.5px',
 
+  }
   return (
+    
     <Layout>
+    
       <div className={indexStyles.mainContainer}>
         <div
           class="jumbotron jumbotron-fluid"
@@ -55,6 +78,8 @@ const IndexPage = () => {
         >
           <div class="container" >
             <img src={profileImg} className={indexStyles.profileImg}></img>
+            <div style={loadStyle}><Loading2 /></div>
+
             <h1 class="display-4">
             <div className={indexStyles.headerText}>
               <div>

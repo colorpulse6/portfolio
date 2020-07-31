@@ -66,15 +66,22 @@
   
   @keyframes image {
     0% {
-      transform: scale(0,0);
+      opacity:100%
+
+    }
+
+    50% {
+      opacity:98%; 
+
 
     }
     
     100% {
-      transform: scale(1,1); 
+      opacity:95%; 
 
 
     }
+    
   }
 
 .profile-img {
@@ -87,7 +94,7 @@
     -moz-box-shadow: 18px 24px 64px -12px rgba(0,0,0,0.75);
      box-shadow: 18px 24px 64px -12px rgba(0,0,0,0.75);;    
     opacity:95%;
-    // animation: image 1s steps(40, end);
+    animation: image 3s;
  
 }
 

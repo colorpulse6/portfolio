@@ -24,7 +24,7 @@ class Loading extends React.Component {
 
     return (
       <div style={styles}>
-        <Lottie speed={3} options={defaultOptions} height={350} width={350} />
+        <Lottie  options={defaultOptions} height={350} width={350} speed="7"/>
       </div>
     );
   }

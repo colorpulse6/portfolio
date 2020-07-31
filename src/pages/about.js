@@ -19,6 +19,7 @@ const About = () => {
       >
         <div class="container">
           <h1 class="display-4">About</h1>
+          {/* <img src={profileImg} className={indexStyles.profileImg}></img> */}
           <p class="lead">
             I am a web developer, writer and musician living in Berlin. I am
             originally from Seattle. I am interested in creative solutions to

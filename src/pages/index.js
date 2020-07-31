@@ -85,9 +85,10 @@ const IndexPage = () => {
           }}
         >
           <div class="container" >
-          <div style={loadStyle}><Loading2 /></div>
+          
 
           <HoverImage className={indexStyles.profileImg} src={profileImg} hoverSrc={profileImgRed} ></HoverImage>
+          <div style={loadStyle}><Loading2 /></div>
             
 
             <h1 class="display-4">

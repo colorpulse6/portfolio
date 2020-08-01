@@ -135,6 +135,7 @@ const IndexPage = () => {
           <Contact />
         </div>
       </div>
+      
       <button onClick={executeScrollTop} className={indexStyles.toTop}>
         <FontAwesomeIcon
           icon={faAngleDoubleUp}

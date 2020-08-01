@@ -66,3 +66,14 @@
 //     animation-fill-mode: backwards;
 //     animation-delay: .5s;
 // }
+
+
+@media only screen and (max-width: 600px) {
+    .project-imgs {
+        width:80px;
+    }
+    .project-container h3 {
+        font-size: 15px;
+    }
+  
+  }

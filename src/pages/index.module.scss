@@ -1,6 +1,5 @@
 .mainContainer>* {
   margin-top: 100px;
-
 }
 
 .headerText div {
@@ -175,8 +174,19 @@
 
 
 
+//RESPONSIVENESS
 
 
+@media only screen and (max-width: 768px) {
+  .headerText div {
+    white-space: normal;
+    overflow: visible;
+  }
+  .profile-img {
+    margin-top:20px;
+  }
+
+}
 
 
 

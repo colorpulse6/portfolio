@@ -3,13 +3,7 @@ import Lottie from "react-lottie";
 import "bootstrap/dist/css/bootstrap.css";
 import loader from "./loading-gif-1.json";
 
-const styles ={
-    marginTop:'-10px',
-    position:'absolute',
-    left:'37.7%',
-    top:'-25.5px',
 
-}
 class Loading extends React.Component {
   render() {
     const defaultOptions = {
@@ -23,7 +17,7 @@ class Loading extends React.Component {
     };
 
     return (
-      <div style={styles}>
+      <div >
         <Lottie  options={defaultOptions} height={350} width={350} speed="7"/>
       </div>
     );

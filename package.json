@@ -39,6 +39,7 @@
     "react-dom": "^16.12.0",
     "react-hover-image": "^2.0.1",
     "react-lottie": "^1.2.3",
+    "react-reveal": "^1.2.2",
     "react-social-media-bar": "0.0.4",
     "social-media-icons-react": "^1.0.10"
   },

@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import Flip from 'react-reveal/Flip';
+import Slide from 'react-reveal/Slide';
+import "bootstrap/dist/css/bootstrap.css"
 
 import Layout from "../components/layout"
 
@@ -10,7 +13,7 @@ import projectStyles from "./projects.module.scss"
 
 const ProjectsPage = () => {
   const linkStyles = { textDecoration: "none" }
-
+  
   //SOURCE CLOUDINARY
   const data = useStaticQuery(graphql`
     query MyProjectQuery {
@@ -27,8 +30,8 @@ const ProjectsPage = () => {
   const images = data.allProject.nodes
 
   return (
-    <div className={projectStyles.container}>
-      <h1>Projects</h1>
+    <div class="container">
+      <h1 class='display-4'><Slide left>Projects</Slide></h1>
       <div className={projectStyles.projectContainer}>
         {images.map(project => (
           <div>
@@ -39,7 +42,7 @@ const ProjectsPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h3>{project.name}</h3>
+                <h3 class="lead"><Flip left>{project.name}</Flip></h3>
                 <img
                   src={project.imgSrc}
                   className={cx(

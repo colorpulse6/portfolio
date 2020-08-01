@@ -8,12 +8,12 @@ import Projects from "./projects.js"
 import Contact from "./contact.js"
 import About from "./about.js"
 
-import Loading from "../components/loader.js";
-import Loading2 from "../components/loader2.js";
+import Loading from "../components/loader.js"
+import Loading2 from "../components/loader2.js"
 
 import "jquery/dist/jquery.js"
 import "bootstrap/dist/css/bootstrap.css"
-import HoverImage from "react-hover-image";
+import HoverImage from "react-hover-image"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -24,7 +24,6 @@ import {
 import { useRef } from "react"
 
 
-
 const scrollToProject = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToAbout = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToContact = ref => window.scrollTo(0, ref.current.offsetTop)
@@ -33,11 +32,11 @@ const scrollToTop = ref => window.scrollTo(window)
 const IndexPage = () => {
   const [isLoading, setLoad] = React.useState(true)
 
-  React.useEffect( () => {
-    setTimeout(() => { 
+  React.useEffect(() => {
+    setTimeout(() => {
       setLoad(false)
-    }, 2000);
-    
+    }, 2000)
+
     scrollToTop()
   }, [])
 
@@ -54,20 +53,17 @@ const IndexPage = () => {
       <div>
         <Loading />
       </div>
-    );
+    )
   }
   const loadStyle = {
-    position:'absolute',
-    left:'37.7%',
-    top:'-24.5px',
-    background:"#06000000"
+    position: "absolute",
+    left: "37.7%",
+    top: "-39.5px",
+    background: "#06000000",
   }
 
-  
   return (
-    
     <Layout>
-    
       <div className={indexStyles.mainContainer}>
         <div
           class="jumbotron jumbotron-fluid"
@@ -84,24 +80,22 @@ const IndexPage = () => {
               "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
           }}
         >
-          <div class="container" >
-          
-          <div style={loadStyle} ><Loading2 /></div>
- 
-          <HoverImage className={indexStyles.profileImg} src={profileImg} hoverSrc={profileImgRed} ></HoverImage>
-          
+          <div class="container">
+            <div style={loadStyle}>
+              <Loading2 />
+            </div>
 
-          
-            
+            <HoverImage
+              className={indexStyles.profileImg}
+              src={profileImg}
+              hoverSrc={profileImgRed}
+            ></HoverImage>
 
             <h1 class="display-4">
-            <div className={indexStyles.headerText}>
-              <div>
-                Hi I'm Nic
+              <div className={indexStyles.headerText}>
+                <div>Hi I'm Nic</div>
+                <div>A Full-Stack Web Developer.</div>
               </div>
-              <div>A Full-Stack Web Developer.</div> 
-              </div>
-
             </h1>
           </div>
         </div>

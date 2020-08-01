@@ -2,12 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import contactStyles from "./contact.module.scss"
 import cx from "classnames"
+import Slide from 'react-reveal/Slide';
+import Flip from 'react-reveal/Flip';
 
 const Contact = () => {
   return (
-    <div className={contactStyles.container}>
-      <h1>Contact Me</h1>
-      <h4>Have a question or want to work together?</h4>
+    <div class="container">
+      <h1 class="display-4"><Slide left>Contact Me</Slide></h1>
+      <h4 class="lead"><Slide right>Have a question or want to work together?</Slide></h4>
       <form
         name="contact"
         method="POST"
@@ -20,18 +22,18 @@ const Contact = () => {
         <div className={contactStyles.main}>
           <div>
             <label>
-              Your Name: <input type="text" name="name" />
+              <Flip left>Your Name: </Flip><input type="text" name="name" />
             </label>
           </div>
           <div>
             <label>
-              Your Email: <input type="email" name="email" required/>
+            <Flip left>Your Email:</Flip> <input type="email" name="email" required/>
             </label>
           </div>
 
           <div>
             <label>
-              Message: <textarea name="message"></textarea>
+            <Flip left>Message: </Flip><textarea name="message"></textarea>
             </label>
           </div>
         </div>

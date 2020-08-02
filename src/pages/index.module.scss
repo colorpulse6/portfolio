@@ -143,36 +143,6 @@
 
 
 
-// @keyframes blinkingText {
-//     0% {
-//         color: rgb(245, 17, 17);
-//     }
-
-//     49% {
-//         color: rgb(204, 8, 8);
-//     }
-
-//     60% {
-//         color: transparent;
-//     }
-
-//     99% {
-//         color: transparent;
-//     }
-
-//     100% {
-//         color: rgb(136, 9, 9);
-//     }
-// }
-
-// .underConstro {
-//     color: red;
-//     animation: blinkingText 3.5s infinite;
-//     margin-bottom: 40px;
-//     margin-top: -50px;
-// }
-
-
 
 //RESPONSIVENESS
 
@@ -188,7 +158,34 @@
 
 }
 
+@keyframes blinkingText {
+  0% {
+      color: rgb(245, 17, 17);
+  }
 
+  49% {
+      color: rgb(204, 8, 8);
+  }
+
+  60% {
+      color: transparent;
+  }
+
+  99% {
+      color: transparent;
+  }
+
+  100% {
+      color: rgb(136, 9, 9);
+  }
+}
+
+.underConstro {
+  color: red;
+  animation: blinkingText 3.5s infinite;
+  margin-bottom: 40px;
+  margin-top: -50px;
+}
 
 
 

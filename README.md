@@ -1,5 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
+<!-- <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
@@ -94,18 +94,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world) -->
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Nic's Portfolio Info
-- For this project i utilized Gatsby.js to create a static portfolio site.  I utilized tools such as css modules and scss style sheets as I was unable to implement them in my previous projects
+- For this project i utilized Gatsby.js and GraphQL to create a static portfolio site.  I utilized tools such as css modules and scss style sheets as I was unable to implement them in my previous projects. I made use of Cloudinary for media storage, and Netfliy for deployment. My intention was to make a simple one page site with no extra fluff or misdirections.  It is still under construction so please excuse any mess or incompleteness!
 
 
-GOAL 1 _ Generate a slug for each post
-
-gatsby.md => gatsby => /blog/gatsby
-
-GOAL 2 - Generate the blog post page template
-
-GOAL 3 - Generate a new page for each post

@@ -3,7 +3,6 @@
 .project-imgs {
     width: 200px;
     overflow: hidden;
-    margin-bottom: -50px;
 
 }
 
@@ -31,6 +30,20 @@
         color: #080808
     }
 }
+
+.iconDiv {
+    margin-top:30px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.iconSvg {
+    width :50px;
+
+    
+    
+}
+
 
 // @keyframes fadeInAnimation {
 //     0% {

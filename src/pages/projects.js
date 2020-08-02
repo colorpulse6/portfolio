@@ -1,8 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import reactIcon from "../imgs/react-original-wordmark.svg";
+import hBIcon from "../imgs/handlebars-original.svg"
+import nodeIcon from "../imgs/nodejs-original-wordmark.svg"
+import mongoIcon from "../imgs/mongodb-original-wordmark.svg"
+import jSIcon from "../imgs/javascript-original.svg"
+import cssIcon from "../imgs/css3-original-wordmark.svg"
+import htmlIcon from "../imgs/html5-original-wordmark.svg"
+import bootstrapIcon from "../imgs/bootstrap-plain-wordmark.svg"
+import npmIcon from "../imgs/npm-original-wordmark.svg"
+import herokuIcon from "../imgs/heroku-plain-wordmark.svg"
+import expressIcon from "../imgs/express-original-wordmark.svg"
+import vsIcon from "../imgs/visualstudio-plain-wordmark.svg"
+
+
 import Flip from 'react-reveal/Flip';
 import Slide from 'react-reveal/Slide';
+import Bounce from 'react-reveal/Bounce';
+
+
 import "bootstrap/dist/css/bootstrap.css"
 
 import Layout from "../components/layout"
@@ -52,9 +69,27 @@ const ProjectsPage = () => {
                 ></img>
               </Link>
             </li>
+          
           </div>
         ))}
       </div>
+      <Bounce><div className={projectStyles.iconDiv}>
+      <img src={reactIcon} className={projectStyles.iconSvg}/>
+      <img src={hBIcon} className={projectStyles.iconSvg}/>
+      <img src={nodeIcon} className={projectStyles.iconSvg}/>
+      <img src={expressIcon} className={projectStyles.iconSvg}/>
+      <img src={mongoIcon} className={projectStyles.iconSvg}/>
+      <img src={jSIcon} className={projectStyles.iconSvg}/>
+      <img src={cssIcon} className={projectStyles.iconSvg}/>
+      <img src={htmlIcon} className={projectStyles.iconSvg}/>
+      <img src={bootstrapIcon} className={projectStyles.iconSvg}/>
+      <img src={npmIcon} className={projectStyles.iconSvg}/>
+      <img src={herokuIcon} className={projectStyles.iconSvg}/>
+      <img src={vsIcon} className={projectStyles.iconSvg}/>
+    
+    </div>
+    </Bounce>
+    
     </div>
   )
 }

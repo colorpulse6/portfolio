@@ -25,6 +25,7 @@
     "gatsby": "^2.23.12",
     "gatsby-cli": "^2.12.67",
     "gatsby-plugin-manifest": "^2.4.21",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.21",
     "gatsby-plugin-web-font-loader": "^1.0.4",
@@ -36,11 +37,13 @@
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
+    "react-devicon": "^0.1.9",
     "react-dom": "^16.12.0",
     "react-hover-image": "^2.0.1",
     "react-lottie": "^1.2.3",
     "react-reveal": "^1.2.2",
     "react-social-media-bar": "0.0.4",
+    "smoke-effect-react": "^1.0.5",
     "social-media-icons-react": "^1.0.10"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
 import profileImgRed from "../imgs/ProfilePicRedEyes.png"
@@ -48,6 +48,7 @@ const IndexPage = () => {
   const executeScrollAbout = () => scrollToAbout(aboutRef)
   const executeScrollContact = () => scrollToContact(contactRef)
   const executeScrollTop = () => scrollToTop(window)
+  
   if (isLoading) {
     return (
       <div>
@@ -62,8 +63,10 @@ const IndexPage = () => {
     background: "#06000000",
   }
 
+
   return (
     <Layout>
+    
       <div className={indexStyles.mainContainer}>
         <div
           class="jumbotron jumbotron-fluid"
@@ -80,6 +83,7 @@ const IndexPage = () => {
               "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
           }}
         >
+        
           <div class="container">
             <div style={loadStyle}>
               <Loading2 />
@@ -93,8 +97,8 @@ const IndexPage = () => {
 
             <h1 class="display-4">
               <div className={indexStyles.headerText}>
-                <div>Hi I'm Nic</div>
-                <div>A Full-Stack Web Developer.</div>
+                <div>Hi I'm Nic,</div>
+                <div>Full-Stack Web Developer.</div>
               </div>
             </h1>
           </div>

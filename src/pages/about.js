@@ -25,7 +25,7 @@ const About = () => {
           
           <p class="lead">
           <Fade right>
-            I am a web developer, writer and musician living in Berlin. I am
+            I am a web developer living in Berlin. I am
             originally from Seattle. I am interested in creative solutions to
             complex problems. I like to make corny video games, arrange
             orchestral music and solve math problems.</Fade>

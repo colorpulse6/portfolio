@@ -33,7 +33,7 @@ const Contact = () => {
 
           <div>
             <label>
-            <Flip left>Message: </Flip><textarea name="message"></textarea>
+            <Flip  left>Message: </Flip><textarea name="message"></textarea>
             </label>
           </div>
         </div>

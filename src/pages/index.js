@@ -1,4 +1,6 @@
 import React from "react"
+import { Helmet } from "react-helmet"
+
 import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
 import profileImgRed from "../imgs/ProfilePicRedEyes.png"
@@ -66,8 +68,12 @@ const IndexPage = () => {
 
   return (
     <Layout>
-    
+    <Helmet>
+    <meta name="image" property="og:image" content={profileImg}></meta>
+    </Helmet>
       <div className={indexStyles.mainContainer}>
+      
+      
         <div
           class="jumbotron jumbotron-fluid"
           style={{

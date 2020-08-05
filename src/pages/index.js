@@ -66,7 +66,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Helmet title={siteMetadata.title} author={siteMetadata.author}>
+      {/* <Helmet title={siteMetadata.title} author={siteMetadata.author}>
       <meta property='og:image' content="https://res.cloudinary.com/duzle7rzg/image/upload/v1596199074/Portfolio/project-images/pihx7vxkggvnptqrwjko.png" />
       <meta property='og:locale' content='en_US' />
       <meta property='og:type' content='website' />
@@ -74,7 +74,7 @@ const IndexPage = () => {
       <meta property='og:description' content="Nic Barnes Portfolio Website" />
       <meta property='og:url' content="https://nichalasbarnes.com/" />
       
-      </Helmet> 
+      </Helmet>  */}
       <div className={indexStyles.mainContainer}>
         <div
           class="jumbotron jumbotron-fluid"

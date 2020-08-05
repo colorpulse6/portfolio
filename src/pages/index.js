@@ -8,7 +8,6 @@ import indexStyles from "./index.module.scss"
 import Projects from "./projects.js"
 import Contact from "./contact.js"
 import About from "./about.js"
-import Navbar from "../components/Navbar.js"
 
 import Loading from "../components/loader.js"
 import Loading2 from "../components/loader2.js"
@@ -66,7 +65,6 @@ const IndexPage = () => {
 
   return (
     <Layout>
-    <Navbar/>
       
       <div className={indexStyles.mainContainer}>
         <div

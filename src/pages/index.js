@@ -1,5 +1,4 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
@@ -9,6 +8,7 @@ import indexStyles from "./index.module.scss"
 import Projects from "./projects.js"
 import Contact from "./contact.js"
 import About from "./about.js"
+import Navbar from "../components/Navbar.js"
 
 import Loading from "../components/loader.js"
 import Loading2 from "../components/loader2.js"
@@ -24,7 +24,6 @@ import {
   faExclamationTriangle,
 } from "@fortawesome/free-solid-svg-icons"
 import { useRef } from "react"
-
 
 const scrollToProject = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToAbout = ref => window.scrollTo(0, ref.current.offsetTop)
@@ -50,7 +49,7 @@ const IndexPage = () => {
   const executeScrollAbout = () => scrollToAbout(aboutRef)
   const executeScrollContact = () => scrollToContact(contactRef)
   const executeScrollTop = () => scrollToTop(window)
-  
+
   if (isLoading) {
     return (
       <div>
@@ -65,15 +64,11 @@ const IndexPage = () => {
     background: "#06000000",
   }
 
-
   return (
     <Layout>
-    <Helmet>
-    <meta name="image" property="og:image" content={profileImg}></meta>
-    </Helmet>
+    <Navbar/>
+      
       <div className={indexStyles.mainContainer}>
-      
-      
         <div
           class="jumbotron jumbotron-fluid"
           style={{
@@ -89,7 +84,6 @@ const IndexPage = () => {
               "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
           }}
         >
-        
           <div class="container">
             <div style={loadStyle}>
               <Loading2 />
@@ -145,7 +139,7 @@ const IndexPage = () => {
           <Contact />
         </div>
       </div>
-      
+
       <button onClick={executeScrollTop} className={indexStyles.toTop}>
         <FontAwesomeIcon
           icon={faAngleDoubleUp}
@@ -154,14 +148,12 @@ const IndexPage = () => {
         ></FontAwesomeIcon>
       </button>
       <h6 className={indexStyles.underConstro}>
-              {" "}
-              <FontAwesomeIcon icon={faExclamationTriangle} />
-              This site is currently under construction.
-              <FontAwesomeIcon icon={faExclamationTriangle} />
-            </h6> 
-      
+        {" "}
+        <FontAwesomeIcon icon={faExclamationTriangle} />
+        This site is currently under construction.
+        <FontAwesomeIcon icon={faExclamationTriangle} />
+      </h6>
     </Layout>
-    
   )
 }
 

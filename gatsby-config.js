@@ -13,7 +13,10 @@ module.exports = {
   siteMetadata: {
     title: 'Nic Barnes Portfolio',
     author: 'Nic Barnes',
-    logo: "https://res.cloudinary.com/duzle7rzg/image/upload/v1596199074/Portfolio/project-images/pihx7vxkggvnptqrwjko.png"
+    image: "https://res.cloudinary.com/duzle7rzg/image/upload/v1596199074/Portfolio/project-images/pihx7vxkggvnptqrwjko.png",
+    url:"https://nichalasbarnes.com/",
+    description:"Nic Barnes Portfolio Site"
+
   },
 
   plugins: [

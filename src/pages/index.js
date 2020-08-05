@@ -8,6 +8,7 @@ import indexStyles from "./index.module.scss"
 import Projects from "./projects.js"
 import Contact from "./contact.js"
 import About from "./about.js"
+import { Helmet } from "react-helmet"
 
 import Loading from "../components/loader.js"
 import Loading2 from "../components/loader2.js"
@@ -65,7 +66,15 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Helmet title={siteMetadata.title} author={siteMetadata.author}>
+      <meta property='og:image' content="https://res.cloudinary.com/duzle7rzg/image/upload/v1596199074/Portfolio/project-images/pihx7vxkggvnptqrwjko.png" />
+      <meta property='og:locale' content='en_US' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content={siteMetadata.title} />
+      <meta property='og:description' content="Nic Barnes Portfolio Website" />
+      <meta property='og:url' content="https://nichalasbarnes.com/" />
       
+      </Helmet> 
       <div className={indexStyles.mainContainer}>
         <div
           class="jumbotron jumbotron-fluid"

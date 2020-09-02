@@ -1,17 +1,16 @@
 import React from "react"
-
+import { Link, graphql, useStaticQuery } from "gatsby"
+import Particle from "../components/Particles"
 import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
 import profileImgRed from "../imgs/ProfilePicRedEyes.png"
 
 import indexStyles from "./index.module.scss"
-import Projects from "./projects.js"
-import Contact from "./contact.js"
-import About from "./about.js"
-import { Helmet } from "react-helmet"
-
-import Loading from "../components/loader.js"
-import Loading2 from "../components/loader2.js"
+import Projects from "./projects"
+import Contact from "./contact"
+import About from "./about"
+import Loading from "../components/loader"
+import Loading2 from "../components/loader2"
 
 import "jquery/dist/jquery.js"
 import "bootstrap/dist/css/bootstrap.css"
@@ -28,7 +27,7 @@ import { useRef } from "react"
 const scrollToProject = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToAbout = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToContact = ref => window.scrollTo(0, ref.current.offsetTop)
-const scrollToTop = ref => window.scrollTo(window)
+const scrollToTop = () => window.scrollTo(window)
 
 const IndexPage = () => {
   const [isLoading, setLoad] = React.useState(true)
@@ -65,17 +64,13 @@ const IndexPage = () => {
   }
 
   return (
+    
     <Layout>
-      {/* <Helmet title={siteMetadata.title} author={siteMetadata.author}>
-      <meta property='og:image' content="https://res.cloudinary.com/duzle7rzg/image/upload/v1596199074/Portfolio/project-images/pihx7vxkggvnptqrwjko.png" />
-      <meta property='og:locale' content='en_US' />
-      <meta property='og:type' content='website' />
-      <meta property='og:title' content={siteMetadata.title} />
-      <meta property='og:description' content="Nic Barnes Portfolio Website" />
-      <meta property='og:url' content="https://nichalasbarnes.com/" />
-      
-      </Helmet>  */}
       <div className={indexStyles.mainContainer}>
+        {/* <div className={indexStyles.particles}>
+        <Particle />
+        </div> */}
+        
         <div
           class="jumbotron jumbotron-fluid"
           style={{
@@ -160,6 +155,7 @@ const IndexPage = () => {
         This site is currently under construction.
         <FontAwesomeIcon icon={faExclamationTriangle} />
       </h6>
+      
     </Layout>
   )
 }

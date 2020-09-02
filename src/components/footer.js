@@ -1,6 +1,7 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { SocialMediaIconsReact } from "social-media-icons-react"
+
 
 import footerStyles from "./footer.module.scss"
 const Footer = () => {
@@ -44,7 +45,7 @@ const Footer = () => {
           size="30"
         />
       </div>
-
+      {/* <p><Link to ="/chat">Secret Chat</Link></p> */}
       <p>{data.site.siteMetadata.author}, © 2020</p>
     </footer>
   )

@@ -1,14 +1,25 @@
 
 
-.project-imgs {
+.project-imgs1 {
     width: 200px;
     overflow: hidden;
 
 }
 
-.project-imgs:hover {
+.project-imgs1:hover {
     transform: translate(10px, 5px) rotate(5deg)
 }
+
+.project-imgs2 {
+    width: 200px;
+    overflow: hidden;
+
+}
+
+.project-imgs2:hover {
+    transform: translate(10px, 5px) rotate(-5deg)
+}
+
 
 .project-container {
     display: flex;

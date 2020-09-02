@@ -11,7 +11,7 @@ import Contact from "./contact"
 import About from "./about"
 import Loading from "../components/loader"
 import Loading2 from "../components/loader2"
-
+import Navbar from "../components/navbar"
 import "jquery/dist/jquery.js"
 import "bootstrap/dist/css/bootstrap.css"
 import HoverImage from "react-hover-image"
@@ -66,6 +66,7 @@ const IndexPage = () => {
   return (
     
     <Layout>
+    
       <div className={indexStyles.mainContainer}>
         {/* <div className={indexStyles.particles}>
         <Particle />
@@ -73,6 +74,7 @@ const IndexPage = () => {
         
         <div
           class="jumbotron jumbotron-fluid"
+          id="home"
           style={{
             backgroundImage:
               "url(" +
@@ -86,6 +88,10 @@ const IndexPage = () => {
               "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
           }}
         >
+        <Navbar 
+        
+
+        />
           <div class="container">
             <div style={loadStyle}>
               <Loading2 />
@@ -113,7 +119,7 @@ const IndexPage = () => {
           ></FontAwesomeIcon>
         </a>
         <hr className={indexStyles.hr}></hr>
-        <div ref={projectRef} className={indexStyles.projectDiv}>
+        <div ref={projectRef} className={indexStyles.projectDiv} id="projects">
           <Projects />
         </div>
 
@@ -124,8 +130,8 @@ const IndexPage = () => {
             className={indexStyles.icons}
           ></FontAwesomeIcon>
         </a>
-        <hr className={indexStyles.hr}></hr>
-        <div ref={aboutRef}>
+        <hr className={indexStyles.hr} ></hr>
+        <div ref={aboutRef} id="about">
           <About />
         </div>
         <a onClick={executeScrollContact} className={indexStyles.buttons}>
@@ -137,7 +143,7 @@ const IndexPage = () => {
         </a>
 
         <hr className={indexStyles.hr}></hr>
-        <div ref={contactRef}>
+        <div ref={contactRef} id="contact">
           <Contact />
         </div>
       </div>

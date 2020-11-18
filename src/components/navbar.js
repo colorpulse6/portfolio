@@ -17,7 +17,6 @@ const Navbar = props => {
   `)
 
   return (
-    <header className={navbarStyles.header}>
       <nav>
         <ul className={navbarStyles.navList}>
           <li>
@@ -60,7 +59,6 @@ const Navbar = props => {
           </li>
         </ul>
       </nav>
-    </header>
   )
 }
 

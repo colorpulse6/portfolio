@@ -1,19 +1,26 @@
 
-.header {
-    padding:0rem 0 3rem;
-    position:fixed
-}
+// .header {
+//     padding:0rem 0 3rem;
+//     position:fixed;
+//     z-index : 10000;
+//     width:100%;
+//     background-color: white;
+
+// }
 
 .title {
     color:#000000;
     font-size: 3rem;
     text-decoration: none;
+
 }
 
-.nav-list { //Use camelCase to apply
+.nav-list {
     display:flex;
     list-style-type: none;
     margin: -20px 0 0 10px;
+    position:fixed;
+    z-index : 10000;
 }
 
 .nav-item {
@@ -21,6 +28,7 @@
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration:none;
+    
 }
 
 .nav-item:hover {

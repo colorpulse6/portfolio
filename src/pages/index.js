@@ -155,12 +155,12 @@ const IndexPage = () => {
           className={indexStyles.icons}
         ></FontAwesomeIcon>
       </button>
-      <h6 className={indexStyles.underConstro}>
+      {/* <h6 className={indexStyles.underConstro}>
         {" "}
         <FontAwesomeIcon icon={faExclamationTriangle} />
         This site is currently under construction.
         <FontAwesomeIcon icon={faExclamationTriangle} />
-      </h6>
+      </h6> */}
       
     </Layout>
   )

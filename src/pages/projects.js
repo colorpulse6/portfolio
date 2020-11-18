@@ -15,6 +15,9 @@ import npmIcon from "../imgs/npm-original-wordmark.svg"
 import herokuIcon from "../imgs/heroku-plain-wordmark.svg"
 import expressIcon from "../imgs/express-original-wordmark.svg"
 import vsIcon from "../imgs/visualstudio-plain-wordmark.svg"
+import pGIcon from "../imgs/postgresql.svg"
+import tSIcon from "../imgs/typescript.svg"
+import fBIcon from "../imgs/firebase.svg"
 
 import Flip from "react-reveal/Flip"
 import Slide from "react-reveal/Slide"
@@ -94,7 +97,10 @@ const ProjectsPage = () => {
           <img src={nodeIcon} className={projectStyles.iconSvg} />
           <img src={expressIcon} className={projectStyles.iconSvg} />
           <img src={mongoIcon} className={projectStyles.iconSvg} />
+          <img src={pGIcon} className={projectStyles.iconSvg} />
+          <img src={fBIcon} className={projectStyles.iconSvgfB} />
           <img src={jSIcon} className={projectStyles.iconSvg} />
+          <img src={tSIcon} className={projectStyles.iconSvg} />
           <img src={cssIcon} className={projectStyles.iconSvg} />
           <img src={htmlIcon} className={projectStyles.iconSvg} />
           <img src={bootstrapIcon} className={projectStyles.iconSvg} />

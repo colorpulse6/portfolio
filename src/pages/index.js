@@ -4,6 +4,7 @@ import Particle from "../components/Particles"
 import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
 import profileImgRed from "../imgs/ProfilePicRedEyes.png"
+import cx from "classnames"
 
 import indexStyles from "./index.module.scss"
 import Projects from "./projects"
@@ -88,10 +89,9 @@ const IndexPage = () => {
               "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
           }}
         >
-        <Navbar 
         
+        <Navbar/>
 
-        />
           <div class="container">
             <div style={loadStyle}>
               <Loading2 />
@@ -111,11 +111,11 @@ const IndexPage = () => {
             </h1>
           </div>
         </div>
-        <a onClick={executeScrollProject} class={indexStyles.buttons}>
+        <a onClick={executeScrollProject} class={indexStyles.buttons} >
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
-            className={indexStyles.icons}
+            className={cx(indexStyles.icons, indexStyles.adjustTop)}
           ></FontAwesomeIcon>
         </a>
         <hr className={indexStyles.hr}></hr>
@@ -123,7 +123,7 @@ const IndexPage = () => {
           <Projects />
         </div>
 
-        <a onClick={executeScrollAbout} className={indexStyles.buttons}>
+        <a onClick={executeScrollAbout} className={cx(indexStyles.buttons, indexStyles.adjustMiddle)}>
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
@@ -134,7 +134,9 @@ const IndexPage = () => {
         <div ref={aboutRef} id="about">
           <About />
         </div>
-        <a onClick={executeScrollContact} className={indexStyles.buttons}>
+
+        <a onClick={executeScrollContact} className={cx(indexStyles.buttons, indexStyles.adjustBottom)}
+>
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
@@ -148,7 +150,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <button onClick={executeScrollTop} className={indexStyles.toTop}>
+      <button onClick={executeScrollTop} className={indexStyles.upButts}>
         <FontAwesomeIcon
           icon={faAngleDoubleUp}
           size="2x"

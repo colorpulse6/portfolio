@@ -32,6 +32,8 @@ const Footer = () => {
             size="30"
           />
         </div>
+        <div className={footerStyles.icons}>
+
         <SocialMediaIconsReact
           borderColor="rgba(0,0,0,0.25)"
           borderWidth="0"
@@ -44,7 +46,21 @@ const Footer = () => {
           url="https://www.linkedin.com/in/nic-barnes-a3297217/"
           size="30"
         />
+        </div>
+        <SocialMediaIconsReact
+          borderColor="rgba(0,0,0,0.25)"
+          borderWidth="0"
+          borderStyle="solid"
+          icon="tumblr"
+          iconColor="rgba(83,81,81,1)"
+          backgroundColor="rgba(212,210,210,1)"
+          iconSize="3"
+          roundness="50%"
+          url="https://craftedcoils-blog-blog.tumblr.com/"
+          size="30"
+        />
       </div>
+      
       {/* <p><Link to ="/chat">Secret Chat</Link></p> */}
       <p>{data.site.siteMetadata.author}, © 2020</p>
     </footer>

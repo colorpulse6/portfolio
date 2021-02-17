@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Particle from "../components/Particles"
 import Layout from "../components/layout"
@@ -31,11 +31,24 @@ const scrollToContact = ref => window.scrollTo(0, ref.current.offsetTop)
 const scrollToTop = () => window.scrollTo(window)
 
 const IndexPage = () => {
-  const [isLoading, setLoad] = React.useState(true)
+  const [isLoading, setLoad] = useState(true)
+  const [addBG, setAddBG] = useState(false)
 
+  const detectScroll = () => {
+    console.log(window.pageYOffset)
+
+    if(window.pageYOffset >= 599){
+      setAddBG(true)
+    } else if (window.pageYOffset <= 600) {
+      setAddBG(false)
+    }
+
+  }
   React.useEffect(() => {
     setLoad(false)
     scrollToTop()
+    window.addEventListener("scroll", detectScroll)
+
   }, [])
 
   const projectRef = useRef(null)
@@ -63,7 +76,7 @@ const IndexPage = () => {
 
   return (
     
-    <Layout>
+    <Layout addBG = {addBG}>
       <div className={indexStyles.mainContainer}>
         <div className={indexStyles.particles}>
         <Particle />

@@ -22,6 +22,16 @@
     
     position:fixed;
     z-index : 100;
+    
+}
+
+.nav-list-rest {
+    display:flex;
+    list-style-type: none;
+    margin: -12px 0 0 10px;
+    
+    position:fixed;
+    z-index : 100;
     background:white;
     width:100%;
     box-shadow: 0 0 5px 10px white;

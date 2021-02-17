@@ -18,7 +18,7 @@ const Navbar = props => {
 
   return (
       <nav>
-        <ul className={navbarStyles.navList}>
+        <ul className={props.addBG === true ? navbarStyles.navListRest : navbarStyles.navList}>
           <li>
             <Link
               className={navbarStyles.navItem}

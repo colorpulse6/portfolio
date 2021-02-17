@@ -11,7 +11,7 @@ const Layout = (props) => {
         <div className={layoutStlyes.container}>
         
             <div className={layoutStlyes.content}>
-                <Navbar/>
+                <Navbar addBG= {props.addBG}/>
               
                 {props.children}
             </div>

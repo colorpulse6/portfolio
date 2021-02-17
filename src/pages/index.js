@@ -80,7 +80,7 @@ const IndexPage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            marginTop: "-60px",
+            marginTop: "-50px",
             paddingRight: "30px",
             marginRight: "-20px",
 
@@ -110,11 +110,12 @@ const IndexPage = () => {
             </h1>
           </div>
         </div>
-        <a onClick={executeScrollProject} class={indexStyles.buttons} >
+        <a onClick={executeScrollProject} class={indexStyles.buttons}  >
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
-            className={cx(indexStyles.icons, indexStyles.adjustTop)}
+            className={cx(indexStyles.icons)}
+            style={{marginTop:"150px"}}
           ></FontAwesomeIcon>
         </a>
         <hr className={indexStyles.hr}></hr>

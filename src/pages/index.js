@@ -67,7 +67,6 @@ const IndexPage = () => {
   return (
     
     <Layout>
-    
       <div className={indexStyles.mainContainer}>
         {/* <div className={indexStyles.particles}>
         <Particle />
@@ -90,7 +89,7 @@ const IndexPage = () => {
           }}
         >
         
-        <Navbar/>
+        
 
           <div class="container">
             <div style={loadStyle}>

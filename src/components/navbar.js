@@ -21,7 +21,6 @@ const Navbar = props => {
         <ul className={navbarStyles.navList}>
           <li>
             <Link
-            
               className={navbarStyles.navItem}
               activeClassName={navbarStyles.activeNavItem}
               to="#home"

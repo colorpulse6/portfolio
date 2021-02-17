@@ -11,7 +11,7 @@ const Layout = (props) => {
         <div className={layoutStlyes.container}>
         
             <div className={layoutStlyes.content}>
-                {/* <Navbar/> */}
+                <Navbar/>
                 <h4 className={layoutStlyes.underConstro}> <FontAwesomeIcon icon={faExclamationTriangle} />This site is currently under construction.<FontAwesomeIcon icon={faExclamationTriangle} /></h4>
                 {props.children}
             </div>

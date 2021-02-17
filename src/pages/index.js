@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import profileImg from "../imgs/ProfilePic.png"
 import profileImgRed from "../imgs/ProfilePicRedEyes.png"
 import cx from "classnames"
-
+import SEO from "../components/Seo"
 import indexStyles from "./index.module.scss"
 import Projects from "./projects"
 import Contact from "./contact"
@@ -74,9 +74,12 @@ const IndexPage = () => {
     background: "#06000000",
   }
 
+  
+
   return (
     
     <Layout addBG = {addBG}>
+    
       <div className={indexStyles.mainContainer}>
         <div className={indexStyles.particles}>
         <Particle />

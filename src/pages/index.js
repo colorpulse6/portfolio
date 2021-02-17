@@ -115,7 +115,7 @@ const IndexPage = () => {
             icon={faAngleDown}
             size="2x"
             className={cx(indexStyles.icons)}
-            style={{marginTop:"150px"}}
+            style={{marginTop:"160px"}}
           ></FontAwesomeIcon>
         </a>
         <hr className={indexStyles.hr}></hr>

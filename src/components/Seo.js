@@ -26,8 +26,8 @@ const SEO = ({ title, description, image, article }) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+      <meta name="description" property="og:description" content={seo.description} />
+      <meta name="image" property="og:image" content={seo.image} />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 

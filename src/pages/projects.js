@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -31,6 +31,28 @@ import "bootstrap/dist/css/bootstrap.css"
 
 const ProjectsPage = () => {
   const linkStyles = { textDecoration: "none" }
+  const [hoverTech, setHoverTech] = useState("")
+
+  let hoverStyles = {
+    borderBottom: "2px solid red",
+    paddingTop:"10px",
+    paddingBottom: "3px",
+    marginTop:"-7px"
+  }
+ 
+    if(hoverTech === "Fire Store"){
+      hoverStyles = {
+        borderBottom: "2px solid red",
+        paddingTop:"4px",
+        paddingBottom: "3px",
+        marginTop:"-6px"
+
+      }
+    }
+    console.log(hoverTech)
+
+  
+  
   //SOURCE CLOUDINARY
   const data = useStaticQuery(graphql`
     query MyProjectQuery {
@@ -46,11 +68,9 @@ const ProjectsPage = () => {
   `)
   const images = data.allProject.nodes
 
-  
-
   return (
     <div class="container">
-      <h1 style={{paddingTop:"20px", marginBottom:"5px"}} class="display-4" >
+      <h1 style={{ paddingTop: "20px", marginBottom: "5px" }} class="display-4">
         <Slide left>Projects</Slide>
       </h1>
       <div className={projectStyles.projectContainer}>
@@ -71,9 +91,15 @@ const ProjectsPage = () => {
                     <img
                       src={project.imgSrc}
                       className={cx(
-                        project.name==="Hoop.It.App" ? projectStyles.projectImgs2 : projectStyles.projectImgs1,
+                        project.name === "Hoop.It.App"
+                          ? projectStyles.projectImgs2
+                          : projectStyles.projectImgs1,
                         projectStyles.fadeAnimation1
                       )}
+                      onMouseEnter={() => {
+                        setHoverTech(project.name)
+                      }}
+                      onMouseLeave={() => setHoverTech("")}
                     ></img>
                   </Link>
                 </li>
@@ -84,30 +110,143 @@ const ProjectsPage = () => {
           >
             <Popup.Header></Popup.Header>
             <Popup.Content>
-              <Popuper 
-                name={project.name}
-              />
+              <Popuper name={project.name} />
             </Popup.Content>
           </Popup>
         ))}
       </div>
       <Bounce>
         <div className={projectStyles.iconDiv}>
-          <img src={reactIcon} className={projectStyles.iconSvg} />
-          <img src={hBIcon} className={projectStyles.iconSvg} />
-          <img src={nodeIcon} className={projectStyles.iconSvg} />
-          <img src={expressIcon} className={projectStyles.iconSvg} />
-          <img src={mongoIcon} className={projectStyles.iconSvg} />
+          <img
+            src={reactIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" || hoverTech === "Fire Store"
+                ? hoverStyles
+                : null
+            }
+          />
+
+          <img
+            src={hBIcon}
+            className={projectStyles.iconSvg}
+            style={hoverTech === "Gigzilla" ? hoverStyles : null}
+          />
+
+          <img
+            src={nodeIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla"
+                ? hoverStyles
+                : null
+            }
+          />
+          <img
+            src={expressIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla"
+                ? hoverStyles
+                : null
+            }
+          />
+          <img
+            src={mongoIcon}
+            className={projectStyles.iconSvg}
+            style={hoverTech === "Hoop.It.App" ? hoverStyles : null}
+          />
           <img src={pGIcon} className={projectStyles.iconSvg} />
-          <img src={fBIcon} className={projectStyles.iconSvgfB} />
-          <img src={jSIcon} className={projectStyles.iconSvg} />
+          <img
+            src={fBIcon}
+            className={projectStyles.iconSvgfB}
+            style={hoverTech === "Fire Store" ? hoverStyles : null}
+          />
+          <img
+            src={jSIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla" ||
+              hoverTech === "Mad Science"
+                ? hoverStyles
+                : null
+            }
+          />
           <img src={tSIcon} className={projectStyles.iconSvg} />
-          <img src={cssIcon} className={projectStyles.iconSvg} />
-          <img src={htmlIcon} className={projectStyles.iconSvg} />
-          <img src={bootstrapIcon} className={projectStyles.iconSvg} />
-          <img src={npmIcon} className={projectStyles.iconSvg} />
-          <img src={herokuIcon} className={projectStyles.iconSvg} />
-          <img src={vsIcon} className={projectStyles.iconSvg} />
+          <img
+            src={cssIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla" ||
+              hoverTech === "Mad Science"
+                ? hoverStyles
+                : null
+            }
+          />
+          <img
+            src={htmlIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla" ||
+              hoverTech === "Mad Science"
+                ? hoverStyles
+                : null
+            }
+          />
+          <img
+            src={bootstrapIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla"
+                ? hoverStyles
+                : null
+            }
+          />
+          <img
+            src={npmIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla" ||
+              hoverTech === "Mad Science"
+                ? hoverStyles
+                : null
+            }
+          />
+          <img
+            src={herokuIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" || hoverTech === "Gigzilla"
+                ? hoverStyles
+                : null
+            }
+          />
+          <img
+            src={vsIcon}
+            className={projectStyles.iconSvg}
+            style={
+              hoverTech === "Hoop.It.App" ||
+              hoverTech === "Fire Store" ||
+              hoverTech === "Gigzilla" ||
+              hoverTech === "Mad Science"
+                ? hoverStyles
+                : null
+            }
+          />
         </div>
       </Bounce>
     </div>

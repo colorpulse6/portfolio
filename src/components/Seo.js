@@ -27,9 +27,9 @@ const SEO = ({ title, description, image, article }) => {
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" property="og:description" content={seo.description} />
-      <meta name="image" property="og:image" content={seo.image} />
+      <meta name="image" property="og:image" content="https://res.cloudinary.com/duzle7rzg/image/upload/v1596199074/Portfolio/project-images/pihx7vxkggvnptqrwjko.png" />
 
-      {seo.url && <meta property="og:url" content={seo.url} />}
+      {/* {seo.url && <meta property="og:url" content={seo.url} />}
 
       {(article ? true : null) && <meta property="og:type" content="article" />}
 
@@ -53,7 +53,7 @@ const SEO = ({ title, description, image, article }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
 
-      {seo.image && <meta name="twitter:image" content={seo.image} />}
+      {seo.image && <meta name="twitter:image" content={seo.image} />} */}
     </Helmet>
   )
 }

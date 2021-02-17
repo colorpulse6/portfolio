@@ -79,7 +79,7 @@ const IndexPage = () => {
   return (
     
     <Layout addBG = {addBG}>
-    
+    <SEO />
       <div className={indexStyles.mainContainer}>
         <div className={indexStyles.particles}>
         <Particle />

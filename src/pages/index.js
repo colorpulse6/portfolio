@@ -80,7 +80,7 @@ const IndexPage = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            marginTop: "150px",
+            marginTop: "-60px",
             paddingRight: "30px",
             marginRight: "-20px",
 

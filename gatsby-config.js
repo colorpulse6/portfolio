@@ -46,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Nic Barnes Portfolio`,
+        short_name: `Nic Barnes Portfolio`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,

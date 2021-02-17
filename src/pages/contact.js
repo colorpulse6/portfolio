@@ -8,9 +8,10 @@ import Flip from 'react-reveal/Flip';
 const Contact = () => {
   return (
     <div class="container">
-      <h1 class="display-4"><Slide left>Contact Me</Slide></h1>
+      <h1 style={{paddingTop:"20px"}} class="display-4"><Slide left>Contact Me</Slide></h1>
       <h4 class="lead"><Slide right>Have a question or want to work together?</Slide></h4>
       <form
+      
         name="contact"
         method="POST"
         data-netlify="true"
@@ -40,6 +41,7 @@ const Contact = () => {
 
         <button
           type="submit"
+          style={{marginTop:"-20px"}}
           className={cx(contactStyles.btn, contactStyles.effect01)}
         >
           <span>Send</span>

@@ -23,7 +23,7 @@ const About = () => {
           
           
           
-          <p class="lead">
+          <p class="lead" style={{marginTop:"-30px"}}>
           <Fade right>
             I am a web developer from Seattle now living in Berlin. I am interested in creative solutions to
             complex problems. I like to make corny video games, arrange

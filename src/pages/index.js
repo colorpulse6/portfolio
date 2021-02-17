@@ -34,10 +34,7 @@ const IndexPage = () => {
   const [isLoading, setLoad] = React.useState(true)
 
   React.useEffect(() => {
-    setTimeout(() => {
-      setLoad(false)
-    }, 2000)
-
+    setLoad(false)
     scrollToTop()
   }, [])
 
@@ -68,9 +65,9 @@ const IndexPage = () => {
     
     <Layout>
       <div className={indexStyles.mainContainer}>
-        {/* <div className={indexStyles.particles}>
+        <div className={indexStyles.particles}>
         <Particle />
-        </div> */}
+        </div>
         
         <div
           class="jumbotron jumbotron-fluid"
@@ -84,6 +81,9 @@ const IndexPage = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             marginTop: "150px",
+            paddingRight: "30px",
+            marginRight: "-20px",
+
             boxShadow:
               "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
           }}

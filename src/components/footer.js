@@ -47,7 +47,7 @@ const Footer = () => {
           size="30"
         />
         </div>
-        <SocialMediaIconsReact
+        {/* <SocialMediaIconsReact
           borderColor="rgba(0,0,0,0.25)"
           borderWidth="0"
           borderStyle="solid"
@@ -58,7 +58,7 @@ const Footer = () => {
           roundness="50%"
           url="https://craftedcoils-blog-blog.tumblr.com/"
           size="30"
-        />
+        /> */}
       </div>
       
       {/* <p><Link to ="/chat">Secret Chat</Link></p> */}

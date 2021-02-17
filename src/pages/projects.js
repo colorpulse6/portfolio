@@ -31,7 +31,6 @@ import "bootstrap/dist/css/bootstrap.css"
 
 const ProjectsPage = () => {
   const linkStyles = { textDecoration: "none" }
-
   //SOURCE CLOUDINARY
   const data = useStaticQuery(graphql`
     query MyProjectQuery {
@@ -47,9 +46,11 @@ const ProjectsPage = () => {
   `)
   const images = data.allProject.nodes
 
+  
+
   return (
     <div class="container">
-      <h1 class="display-4">
+      <h1 style={{paddingTop:"20px", marginBottom:"5px"}} class="display-4" >
         <Slide left>Projects</Slide>
       </h1>
       <div className={projectStyles.projectContainer}>

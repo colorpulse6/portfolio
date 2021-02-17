@@ -18,6 +18,7 @@ import vsIcon from "../imgs/visualstudio-plain-wordmark.svg"
 import pGIcon from "../imgs/postgresql.svg"
 import tSIcon from "../imgs/typescript.svg"
 import fBIcon from "../imgs/firebase.svg"
+import gatsbyIcon from "../imgs/gatsby.svg"
 
 import Flip from "react-reveal/Flip"
 import Slide from "react-reveal/Slide"
@@ -34,24 +35,8 @@ const ProjectsPage = () => {
   const [hoverTech, setHoverTech] = useState("")
 
   let hoverStyles = {
-    borderBottom: "2px solid red",
-    paddingTop:"10px",
-    paddingBottom: "3px",
-    marginTop:"-7px"
-  }
- 
-    if(hoverTech === "Fire Store"){
-      hoverStyles = {
-        borderBottom: "2px solid red",
-        paddingTop:"4px",
-        paddingBottom: "3px",
-        marginTop:"-6px"
-
-      }
-    }
-    console.log(hoverTech)
-
-  
+    boxShadow: "5px 5px 2px 1px rgba(132, 37, 83, .3)"
+  }  
   
   //SOURCE CLOUDINARY
   const data = useStaticQuery(graphql`
@@ -91,7 +76,7 @@ const ProjectsPage = () => {
                     <img
                       src={project.imgSrc}
                       className={cx(
-                        project.name === "Hoop.It.App"
+                        project.name === "Hoop.It.App" || project.name === "Fire Store"
                           ? projectStyles.projectImgs2
                           : projectStyles.projectImgs1,
                         projectStyles.fadeAnimation1
@@ -179,6 +164,7 @@ const ProjectsPage = () => {
             }
           />
           <img src={tSIcon} className={projectStyles.iconSvg} />
+          <img src={gatsbyIcon} className={projectStyles.iconSvgG} />
           <img
             src={cssIcon}
             className={projectStyles.iconSvg}

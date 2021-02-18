@@ -199,7 +199,16 @@ background-color: white;
 
 //RESPONSIVENESS
 @media only screen and (max-width: 450px) {
- 
+  .mainContainer{
+    display:flex;
+    flex-direction: column;
+    align-items:center
+  }
+  .headerText {
+    margin-bottom:-120px;
+  
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -215,8 +224,9 @@ background-color: white;
     margin-top:50px;
   }
   .backgroundImg {
-    margin-right:-100px;
+    // margin-right:-100px;
   }
+  
 
 }
 

@@ -63,7 +63,29 @@
 }
 
 
+@media only screen and (max-width: 450px) {
+    .project-container{
+      display:flex;
+      flex-direction: column;
+      align-items:center
+    }
+    .iconDiv{
+        display:flex;
+        justify-content:center
+      }
 
+      .iconSvg {
+        width:20px;
+    }
+
+    .iconSvgG {
+        width :15px;
+    }
+    
+    .iconSvgfB {
+        width:15px;
+    }
+  }
 
 @media only screen and (max-width: 768px) {
     .project-imgs {

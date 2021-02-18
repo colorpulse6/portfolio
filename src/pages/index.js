@@ -81,9 +81,9 @@ const IndexPage = () => {
     <Layout addBG = {addBG}>
     <SEO />
       <div className={indexStyles.mainContainer}>
-        <div className={indexStyles.particles}>
+        {/* <div className={indexStyles.particles}>
         <Particle />
-        </div>
+        </div> */}
         
         <div
           class="jumbotron jumbotron-fluid"
@@ -94,9 +94,9 @@ const IndexPage = () => {
         
 
           <div class="container">
-            <div style={loadStyle}>
+            {/* <div style={loadStyle}>
               <Loading2 />
-            </div>
+            </div> */}
 
             <HoverImage
               className={indexStyles.profileImg}

@@ -161,7 +161,8 @@ const ProjectsPage = () => {
               hoverTech === "Hoop.It.App" ||
               hoverTech === "Fire Store" ||
               hoverTech === "Gigzilla" ||
-              hoverTech === "Mad Science"
+              hoverTech === "Mad Science" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }

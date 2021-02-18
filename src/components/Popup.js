@@ -3,8 +3,10 @@ import ReactPlayer from "react-player"
 import madScienceGif from "./mad-science-gif.gif"
 import hoopItAppGif from "./hoop.it.app.gif"
 import gigzillaGif from "./Gigzilla.gif"
-import PopupStlyles from "./popup.module.scss"
+import PopupStyles from "./popup.module.scss"
 import FireStoreGif from "./fire-store-gif.gif"
+import JobToastGif from "./job-toast-gif.gif"
+
 export default function Popup(props) {
   function getImage(name) {
     let gif
@@ -20,10 +22,13 @@ export default function Popup(props) {
     if (name === "Fire Store"){
       gif = FireStoreGif
     }
+    if (name === "Job Toast"){
+      gif = JobToastGif
+    }
     return gif
   }
   return (
-    <div className={PopupStlyles.container}>
+    <div className={PopupStyles.container}>
       <img src={getImage(props.name)} />
     </div>
   )

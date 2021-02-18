@@ -106,7 +106,8 @@ const ProjectsPage = () => {
             src={reactIcon}
             className={projectStyles.iconSvg}
             style={
-              hoverTech === "Hoop.It.App" || hoverTech === "Fire Store"
+              hoverTech === "Hoop.It.App" || hoverTech === "Fire Store" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }
@@ -124,7 +125,8 @@ const ProjectsPage = () => {
             style={
               hoverTech === "Hoop.It.App" ||
               hoverTech === "Fire Store" ||
-              hoverTech === "Gigzilla"
+              hoverTech === "Gigzilla" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }
@@ -135,7 +137,8 @@ const ProjectsPage = () => {
             style={
               hoverTech === "Hoop.It.App" ||
               hoverTech === "Fire Store" ||
-              hoverTech === "Gigzilla"
+              hoverTech === "Gigzilla" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }
@@ -145,7 +148,7 @@ const ProjectsPage = () => {
             className={projectStyles.iconSvg}
             style={hoverTech === "Hoop.It.App" ? hoverStyles : null}
           />
-          <img src={pGIcon} className={projectStyles.iconSvg} />
+          <img src={pGIcon} className={projectStyles.iconSvg} style={hoverTech === "Job Toast" ? hoverStyles : null} />
           <img
             src={fBIcon}
             className={projectStyles.iconSvgfB}
@@ -163,7 +166,7 @@ const ProjectsPage = () => {
                 : null
             }
           />
-          <img src={tSIcon} className={projectStyles.iconSvg} />
+          <img src={tSIcon} className={projectStyles.iconSvg} style={hoverTech === "Job Toast" ? hoverStyles : null} />
           <img src={gatsbyIcon} className={projectStyles.iconSvgG} />
           <img
             src={cssIcon}
@@ -172,7 +175,8 @@ const ProjectsPage = () => {
               hoverTech === "Hoop.It.App" ||
               hoverTech === "Fire Store" ||
               hoverTech === "Gigzilla" ||
-              hoverTech === "Mad Science"
+              hoverTech === "Mad Science" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }
@@ -184,7 +188,8 @@ const ProjectsPage = () => {
               hoverTech === "Hoop.It.App" ||
               hoverTech === "Fire Store" ||
               hoverTech === "Gigzilla" ||
-              hoverTech === "Mad Science"
+              hoverTech === "Mad Science" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }
@@ -207,7 +212,8 @@ const ProjectsPage = () => {
               hoverTech === "Hoop.It.App" ||
               hoverTech === "Fire Store" ||
               hoverTech === "Gigzilla" ||
-              hoverTech === "Mad Science"
+              hoverTech === "Mad Science" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }
@@ -216,7 +222,8 @@ const ProjectsPage = () => {
             src={herokuIcon}
             className={projectStyles.iconSvg}
             style={
-              hoverTech === "Hoop.It.App" || hoverTech === "Gigzilla"
+              hoverTech === "Hoop.It.App" || hoverTech === "Gigzilla" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }
@@ -228,7 +235,8 @@ const ProjectsPage = () => {
               hoverTech === "Hoop.It.App" ||
               hoverTech === "Fire Store" ||
               hoverTech === "Gigzilla" ||
-              hoverTech === "Mad Science"
+              hoverTech === "Mad Science" ||
+              hoverTech === "Job Toast"
                 ? hoverStyles
                 : null
             }

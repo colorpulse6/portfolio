@@ -88,21 +88,7 @@ const IndexPage = () => {
         <div
           class="jumbotron jumbotron-fluid"
           id="home"
-          style={{
-            backgroundImage:
-              "url(" +
-              "https://res.cloudinary.com/duzle7rzg/image/upload/v1596112152/Portfolio/project-images/esusev0fnwlvnpvqatwq.jpg" +
-              ")",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            marginTop: "-50px",
-            paddingRight: "30px",
-            marginRight: "-20px",
-
-            boxShadow:
-              "25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset",
-          }}
+          className={indexStyles.backgroundImg}
         >
         
         

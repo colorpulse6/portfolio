@@ -46,10 +46,12 @@
     margin-top:30px;
     display:flex;
     justify-content: space-evenly;
+    max-width:100%;
 }
 
 .iconSvg {
-    width :60px;
+    max-width :60px;
+    flex-grow:1;
 }
 
 .iconSvgG {
@@ -61,48 +63,26 @@
 }
 
 
-// @keyframes fadeInAnimation {
-//     0% {
-//         opacity: 0;
-//     }
-
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
-// .fade-animation-1 {
-//     animation: fadeInAnimation ease 1s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: forwards;
-// }
-
-// .fade-animation-2 {
-//     animation: fadeInAnimation ease 1.5s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: forwards;
-// }
-
-// .fade-animation-3 {
-//     animation: fadeInAnimation ease 2s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: forwards;
-// }
-
-// .fade-animation-4 {
-//     animation: fadeInAnimation linear .5s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: backwards;
-//     animation-delay: .5s;
-// }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .project-imgs {
         width:80px;
     }
     .project-container h3 {
         font-size: 15px;
+    }
+
+    .iconSvg {
+        width:30px;
+    }
+
+    .iconSvgG {
+        width :25px;
+    }
+    
+    .iconSvgfB {
+        width:25px;
     }
   
   }

@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import navbarStyles from "./navbar.module.scss"
-import profileImg from "../imgs/ProfilePic.jpeg"
 
 const Navbar = props => {
   //Query graphql db with tagged template literal

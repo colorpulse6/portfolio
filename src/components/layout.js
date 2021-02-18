@@ -3,8 +3,6 @@ import Navbar from './navbar'
 import Footer from './footer'
 import '../styles/index.scss'
 import layoutStlyes from './layout.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
 const Layout = (props) => {
     return (

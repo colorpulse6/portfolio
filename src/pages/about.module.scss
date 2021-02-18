@@ -20,3 +20,13 @@
     margin-top: -80px;
     margin-bottom: -50px;
 }
+
+@media only screen and (max-width: 768px) {
+    .backgroundDiv p 
+   { 
+       column-count: 1;
+    font-size: 2.5vw;
+    text-align: center;
+
+}
+}

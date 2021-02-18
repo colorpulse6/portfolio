@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    // max-width: 750px;
+    width: 100%;
     padding: 1rem;
 
     display: flex;
@@ -11,34 +11,6 @@
 
 .content {
     flex-grow: 1;
+
 }
 
-@keyframes blinkingText {
-    0% {
-        color: rgb(245, 17, 17);
-    }
-
-    49% {
-        color: rgb(204, 8, 8);
-    }
-
-    60% {
-        color: transparent;
-    }
-
-    99% {
-        color: transparent;
-    }
-
-    100% {
-        color: rgb(136, 9, 9);
-    }
-}
-
-.underConstro {
-    color: red;
-    animation: blinkingText 3.5s infinite;
-    margin-top: -50px;
-    margin-bottom: -180px;
-    opacity: 15%;
-}

@@ -1,5 +1,12 @@
+
 .mainContainer>* {
   margin-top: 100px;
+  
+}
+
+.headerText {
+  margin-top:-20px;
+
 }
 
 .headerText div {
@@ -32,64 +39,27 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes type {
-  0% {
-    width: 0;
-  }
-
-  99.9% {}
-
-  100% {
-    border: none;
-  }
+.backgroundImg {
+  background-image:
+              url( 
+              "https://res.cloudinary.com/duzle7rzg/image/upload/v1596112152/Portfolio/project-images/esusev0fnwlvnpvqatwq.jpg" 
+              );
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: -5px;
+            // padding-right: 20px;
+            margin-right: -20px;
+            box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+            
 }
 
-@-webkit-keyframes type {
-  0% {
-    width: 0;
-  }
 
-  99.9% {}
-
-  100% {
-    border: none;
-  }
-}
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-
-  1% {
-    opacity: 1;
-  }
-
-  99.9% {}
-
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@keyframes image {
-  0% {
-    opacity: 0
-  }
-
-
-  100% {
-    opacity: .95;
-
-
-  }
-
-}
 
 .profile-img {
-  width: 200px;
+  max-width: 200px;
   height: 200px;
+ 
   margin-bottom: 100px;
   margin-top:8px;
   transition: transform .5s;
@@ -100,6 +70,7 @@
   z-index:10000;
   opacity: .95;
   animation: image 3s;
+  
 }
 
 .buttons {
@@ -167,91 +138,90 @@ background-color: white;
 }
 
 
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  99.9% {}
+
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+
+  99.9% {}
+
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99.9% {}
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes image {
+  0% {
+    opacity: 0
+  }
+
+
+  100% {
+    opacity: .95;
+
+
+  }
+
+}
+
 
 
 
 
 //RESPONSIVENESS
-
+@media only screen and (max-width: 450px) {
+ 
+}
 
 @media only screen and (max-width: 768px) {
+
+  .icons{
+    width:20px;
+  }
   .headerText div {
     white-space: normal;
     overflow: visible;
   }
   .profile-img {
-    margin-top:20px;
+    margin-top:50px;
+  }
+  .backgroundImg {
+    margin-right:-100px;
   }
 
 }
 
-@keyframes blinkingText {
-  0% {
-      color: rgb(245, 17, 17);
-  }
-
-  49% {
-      color: rgb(204, 8, 8);
-  }
-
-  60% {
-      color: transparent;
-  }
-
-  99% {
-      color: transparent;
-  }
-
-  100% {
-      color: rgb(136, 9, 9);
-  }
-}
-
-.underConstro {
-  color: red;
-  animation: blinkingText 3.5s infinite;
-  margin-bottom: 40px;
-  margin-top: -50px;
-}
 
 
 
 
 
-
-
-
-// .text {
-//     font-family: "ShogunsClan", sans-serif;
-//     font-size: 180px;
-//     color:black;
-//     font-weight: lighter;
-// }
-
-// .nic{
-// margin-left:-500px;
-// margin-top:-150px;
-// transform: rotate(330deg);
-
-// }
-
-// .barnes{
-//     margin-top:-130;
-//     margin-left:550px;
-//     transform: rotate(30deg);
-// }
-
-// .portfolio {
-// margin-left:-250px;
-// margin-top: -100px
-// }
-
-// @font-face {
-//     font-family: 'AllCrackedOut';
-//     src: url("../fonts/AllCrackedOut.ttf")
-//   }
-
-// @font-face {
-//     font-family: 'ShogunsClan';
-//     src: url("../fonts/ShogunsClan.ttf")
-//   }

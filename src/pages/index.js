@@ -81,9 +81,9 @@ const IndexPage = () => {
     <Layout addBG = {addBG}>
     <SEO />
       <div className={indexStyles.mainContainer}>
-        {/* <div className={indexStyles.particles}>
+        <div className={indexStyles.particles}>
         <Particle />
-        </div> */}
+        </div>
         
         <div
           class="jumbotron jumbotron-fluid"
@@ -112,7 +112,7 @@ const IndexPage = () => {
             </h1>
           </div>
         </div>
-        <a onClick={executeScrollProject} class={indexStyles.buttons}  >
+        <a onClick={executeScrollProject} className={cx(indexStyles.buttons, indexStyles.adjustTop)}  >
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
@@ -132,7 +132,7 @@ const IndexPage = () => {
             className={indexStyles.icons}
           ></FontAwesomeIcon>
         </a>
-        <hr className={indexStyles.hr} ></hr>
+        <hr className={indexStyles.hr} style={{marginTop:"-50px"}} ></hr>
         <div ref={aboutRef} id="about">
           <About />
         </div>

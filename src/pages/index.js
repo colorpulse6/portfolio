@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Particle from "../components/Particles"
 import Layout from "../components/layout"
@@ -37,18 +37,16 @@ const IndexPage = () => {
   const detectScroll = () => {
     console.log(window.pageYOffset)
 
-    if(window.pageYOffset >= 599){
+    if (window.pageYOffset >= 599) {
       setAddBG(true)
     } else if (window.pageYOffset <= 600) {
       setAddBG(false)
     }
-
   }
   React.useEffect(() => {
     setLoad(false)
     scrollToTop()
     window.addEventListener("scroll", detectScroll)
-
   }, [])
 
   const projectRef = useRef(null)
@@ -74,25 +72,19 @@ const IndexPage = () => {
     background: "#06000000",
   }
 
-  
-
   return (
-    
-    <Layout addBG = {addBG}>
-    <SEO />
+    <Layout addBG={addBG}>
+      <SEO />
       <div className={indexStyles.mainContainer}>
         <div className={indexStyles.particles}>
-        <Particle />
+          <Particle />
         </div>
-        
+
         <div
           class="jumbotron jumbotron-fluid"
           id="home"
           className={indexStyles.backgroundImg}
         >
-        
-        
-
           <div class="container">
             {/* <div style={loadStyle}>
               <Loading2 />
@@ -112,12 +104,15 @@ const IndexPage = () => {
             </h1>
           </div>
         </div>
-        <a onClick={executeScrollProject} className={cx(indexStyles.buttons, indexStyles.adjustTop)}  >
+        <a
+          onClick={executeScrollProject}
+          className={cx(indexStyles.buttons, indexStyles.adjustTop)}
+        >
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
             className={cx(indexStyles.icons)}
-            style={{marginTop:"160px"}}
+            style={{ marginTop: "160px" }}
           ></FontAwesomeIcon>
         </a>
         <hr className={indexStyles.hr}></hr>
@@ -125,20 +120,25 @@ const IndexPage = () => {
           <Projects />
         </div>
 
-        <a onClick={executeScrollAbout} className={cx(indexStyles.buttons, indexStyles.adjustMiddle)}>
+        <a
+          onClick={executeScrollAbout}
+          className={cx(indexStyles.buttons, indexStyles.adjustMiddle)}
+        >
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
             className={indexStyles.icons}
           ></FontAwesomeIcon>
         </a>
-        <hr className={indexStyles.hr} style={{marginTop:"-50px"}} ></hr>
+        <hr className={indexStyles.hr} style={{ marginTop: "-50px" }}></hr>
         <div ref={aboutRef} id="about">
           <About />
         </div>
 
-        <a onClick={executeScrollContact} className={cx(indexStyles.buttons, indexStyles.adjustBottom)}
->
+        <a
+          onClick={executeScrollContact}
+          className={cx(indexStyles.buttons, indexStyles.adjustBottom)}
+        >
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
@@ -165,7 +165,6 @@ const IndexPage = () => {
         This site is currently under construction.
         <FontAwesomeIcon icon={faExclamationTriangle} />
       </h6> */}
-      
     </Layout>
   )
 }
